@@ -1,9 +1,16 @@
 [
  {
+  "title": "'71",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "(500) Days of Summer",
   "year": 2009,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DTDv1DLE-0X/"
   ]
@@ -12,7 +19,7 @@
   "title": "10 Things I Hate About You",
   "year": 1999,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DcDfsMpiXCn/",
    "https://www.instagram.com/reel/DZKVjB6I_Zw/",
@@ -21,10 +28,31 @@
   ]
  },
  {
+  "title": "13 Hours: The Secret Soldiers of Benghazi",
+  "year": null,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "21",
+  "year": 2008,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "300: Rise of an Empire",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "50/50",
   "year": 2011,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DcyqYSHPngV/"
   ]
@@ -33,7 +61,7 @@
   "title": "A Beautiful Mind",
   "year": 2001,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/De5iFgwh4hB/"
   ]
@@ -42,7 +70,7 @@
   "title": "A Bronx Tale",
   "year": 1993,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DSPvIFkjOCB/"
   ]
@@ -51,7 +79,7 @@
   "title": "A Friend of Dorothy",
   "year": 2025,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DbN6XCPPRWt/"
   ]
@@ -60,25 +88,39 @@
   "title": "A Guide to Recognizing Your Saints",
   "year": 2006,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DcnYuGNxpg5/"
   ]
  },
  {
+  "title": "A Silent Voice",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Adaptation.",
   "year": 2002,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DZPaSo0qwCg/"
   ]
  },
  {
+  "title": "Allied",
+  "year": null,
+  "type": "movie",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
   "title": "Amadeus",
   "year": 1984,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DbL4Dc_IW7d/",
    "https://www.instagram.com/reel/DMvD-8YS6rv/"
@@ -88,62 +130,216 @@
   "title": "American Crime Story",
   "year": 2016,
   "type": "tv",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DX-PgenjrpL/"
   ]
  },
  {
+  "title": "American Pie",
+  "year": 1999,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "American Pie 2",
+  "year": 2001,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "American Pie Presents: Band Camp",
+  "year": 2005,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "American Pie Presents: Beta House",
+  "year": 2007,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "American Pie Presents: The Book of Love",
+  "year": 2009,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "American Psycho",
+  "year": 2000,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": [],
+  "letterboxd": "https://boxd.it/28Vs"
+ },
+ {
+  "title": "American Reunion",
+  "year": 2012,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "American Wedding",
+  "year": 2003,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "An Inconvenient Sequel: Truth to Power",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Anna",
   "year": 2019,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DS2Hcd3k5Ha/"
   ]
  },
  {
+  "title": "Anyone But You",
+  "year": null,
+  "type": "movie",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
   "title": "Atonement",
   "year": 2007,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DQwyW0nEgQK/"
   ]
  },
  {
+  "title": "Attacco al potere",
+  "year": null,
+  "type": "movie",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
+  "title": "Avatar",
+  "year": 2009,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/1Efm",
+  "status": "watched",
+  "liked": true,
+  "instagram": []
+ },
+ {
+  "title": "Avengers: Age of Ultron",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Barbie",
+  "year": 2023,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/bCLK",
+  "status": "watched",
+  "my_rating": 3.5,
+  "liked": true,
+  "instagram": []
+ },
+ {
+  "title": "Batman Begins",
+  "year": 2005,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Batman Begins",
+  "year": null,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "Batman v Superman: Dawn of Justice",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Beau Travail",
   "year": 1999,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DYh6WLuv11m/",
    "https://www.instagram.com/reel/DXhMfKRysFS/"
   ]
  },
  {
+  "title": "Belli di papà",
+  "year": 2015,
+  "type": "movie",
+  "check": true,
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Big World",
   "year": 2024,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DVBWWxRDa3Z/"
   ]
  },
  {
+  "title": "Billy Elliot",
+  "year": 2000,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Birdman",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Birth",
   "year": 2004,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DYG-ozEPXND/"
   ]
  },
  {
+  "title": "Black Mass",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Bleed for This",
   "year": 2016,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Da-qAJ9NJem/"
   ]
@@ -152,16 +348,23 @@
   "title": "Bombshell",
   "year": 2019,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DSTIEZRk0Py/"
   ]
  },
  {
+  "title": "Bosch",
+  "year": null,
+  "type": "tv",
+  "status": "watched",
+  "instagram": []
+ },
+ {
   "title": "Brave",
   "year": 2012,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DUV5qNZCH8Q/"
   ]
@@ -170,16 +373,23 @@
   "title": "Breathless",
   "year": 1983,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DcQDQMkodmH/"
   ]
  },
  {
+  "title": "Bridge of Spies",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Bullet Train",
   "year": 2022,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DVyigvjk6gf/",
    "https://www.instagram.com/reel/DSfVX0BErSP/"
@@ -189,34 +399,123 @@
   "title": "Captain Fantastic",
   "year": 2016,
   "type": "movie",
-  "status": "da vedere",
+  "status": "maybe watched",
   "instagram": [
    "https://www.instagram.com/reel/DbTTJjkoLhn/"
   ]
  },
  {
+  "title": "Captain Underpants: The First Epic Movie",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Cast Away",
   "year": 2000,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DZmyZwqNoM4/"
   ]
  },
  {
+  "title": "Catch Me If You Can",
+  "year": 2002,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/29VS",
+  "status": "watched",
+  "my_rating": 5.0,
+  "liked": true,
+  "instagram": []
+ },
+ {
+  "title": "Chaos Walking",
+  "year": null,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "Chappie",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Cinderella",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Clarkson's Farm",
+  "year": null,
+  "type": "tv",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "Codice 999",
+  "year": null,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "Cold Pursuit",
+  "year": null,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "Concussion",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Così parlò De Crescenzo",
+  "year": 2016,
+  "type": "movie",
+  "check": true,
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Dallas Buyers Club",
   "year": 2013,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DezELL6zK8t/"
   ]
  },
  {
+  "title": "Dead Poets Society",
+  "year": 1989,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/2aSg",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
+  "title": "Deadpool",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Deep Water",
   "year": 2022,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DcnW1iiTP9U/",
    "https://www.instagram.com/reel/DQJCKEAkyEm/"
@@ -227,17 +526,46 @@
   "year": 2015,
   "type": "movie",
   "tmdb_id": 303991,
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DX4QBUKItDv/",
    "https://www.instagram.com/reel/DUSYyhUjwi_/"
   ]
  },
  {
+  "title": "Despicable Me",
+  "year": 2010,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Despicable Me 2",
+  "year": 2013,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Despicable Me 3",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Die Hard",
+  "year": 1988,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/2a7u",
+  "status": "watched",
+  "instagram": []
+ },
+ {
   "title": "Dogma",
   "year": 1999,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DciV49Yyxzm/"
   ]
@@ -246,7 +574,7 @@
   "title": "Don't Worry Darling",
   "year": 2022,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DZbBzQqvXXr/"
   ]
@@ -255,7 +583,7 @@
   "title": "Dracula",
   "year": 2020,
   "type": "tv",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DcbROHbsRvg/"
   ]
@@ -264,7 +592,7 @@
   "title": "Dream Scenario",
   "year": 2023,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DalC2SJNjk6/"
   ]
@@ -273,7 +601,7 @@
   "title": "Duplicity",
   "year": 2009,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DXe7nZViFuE/"
   ]
@@ -282,17 +610,31 @@
   "title": "Eden Lake",
   "year": 2008,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DTxAHkhD7Ww/"
   ]
+ },
+ {
+  "title": "Edge of Tomorrow",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "El ciudadano ilustre",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
  },
  {
   "title": "Enemy",
   "year": 2013,
   "type": "movie",
   "tmdb_id": 181886,
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DVRETNaiL81/"
   ]
@@ -301,7 +643,7 @@
   "title": "Eternal Sunshine of the Spotless Mind",
   "year": 2004,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Dcbrb-1Mms-/"
   ]
@@ -310,7 +652,7 @@
   "title": "Euphoria",
   "year": 2019,
   "type": "tv",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Ddmv-1jhlR3/"
   ]
@@ -319,7 +661,7 @@
   "title": "Everwood",
   "year": 2002,
   "type": "tv",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DVspce-FVOP/"
   ]
@@ -328,71 +670,290 @@
   "title": "Eyes Wide Shut",
   "year": 1999,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/p/DX6aMstjCW5/"
   ]
  },
  {
+  "title": "Fack ju Göhte",
+  "year": 2013,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Fences",
+  "year": null,
+  "type": "movie",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
+  "title": "Ferdinand",
+  "year": 2017,
+  "type": "movie",
+  "tmdb_id": 364689,
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Ferrari 312B",
+  "year": null,
+  "type": "movie",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
+  "title": "Fifty Shades of Grey",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Fight Club",
+  "year": 1999,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/2a9q",
+  "status": "watched",
+  "my_rating": 5.0,
+  "liked": true,
+  "instagram": []
+ },
+ {
   "title": "Flyboys",
   "year": 2006,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DS_wcPik5HS/"
   ]
  },
  {
+  "title": "Forrest Gump",
+  "year": 1994,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Frankie and Johnny",
   "year": 1991,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DcyEBa1gTZz/"
   ]
  },
  {
+  "title": "Frantz",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Free State of Jones",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Fruitvale Station",
   "year": 2013,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Db51O9GSvv7/"
   ]
  },
  {
+  "title": "Furious 7",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Fury",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Gia",
   "year": 1998,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DcSYnSgMiDR/"
   ]
  },
  {
+  "title": "Glass Onion",
+  "year": 2022,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/oCkK",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
+  "title": "Gone Girl",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Good Will Hunting",
   "year": 1997,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Dc4jDrSEjfA/",
    "https://www.instagram.com/reel/Dd_gYARAjcR/"
-  ]
+  ],
+  "letterboxd": "https://boxd.it/2ahY"
+ },
+ {
+  "title": "Guardians of the Galaxy",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Guardians of the Galaxy Vol. 2",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Hail, Caesar!",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Half Nelson",
+  "year": null,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "Harry Potter and the Deathly Hallows - Part 2",
+  "year": null,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "Harry Potter and the Deathly Hallows: Part 1",
+  "year": 2010,
+  "type": "movie",
+  "status": "watched",
+  "tmdb_id": 12444,
+  "instagram": []
+ },
+ {
+  "title": "Harry Potter and the Half-Blood Prince",
+  "year": 2009,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "Harry Potter and the Order of the Phoenix",
+  "year": null,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "Harry Potter and the Philosopher's Stone",
+  "year": 2001,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/29QS",
+  "status": "watched",
+  "liked": true,
+  "instagram": []
  },
  {
   "title": "Heretic",
   "year": 2024,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DcRcFYbNvHf/"
   ]
  },
  {
+  "title": "Hitman's Wife's Bodyguard",
+  "year": null,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "Home Alone",
+  "year": 1990,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/29Fg",
+  "status": "watched",
+  "my_rating": 4.0,
+  "liked": true,
+  "instagram": []
+ },
+ {
+  "title": "Home Alone 2: Lost in New York",
+  "year": 1992,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/29F6",
+  "status": "watched",
+  "my_rating": 4.0,
+  "liked": true,
+  "instagram": []
+ },
+ {
+  "title": "Homefront",
+  "year": null,
+  "type": "movie",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
+  "title": "House",
+  "year": null,
+  "type": "tv",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "How the Grinch Stole Christmas",
+  "year": 2000,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/1ZHQ",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "How to Train Your Dragon 2",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "I Am Sam",
   "year": 2001,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DRWcWUaDQ3g/"
   ]
@@ -401,7 +962,7 @@
   "title": "I cento passi",
   "year": 2000,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DYC-jvrtrbW/"
   ]
@@ -410,7 +971,7 @@
   "title": "I, Tonya",
   "year": 2017,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DZYFKYLIT_C/",
    "https://www.instagram.com/reel/DTBI-41Dbb6/"
@@ -420,43 +981,192 @@
   "title": "Il conformista",
   "year": 1970,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DYzNYSDovYL/"
   ]
  },
  {
+  "title": "In the Heart of the Sea",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Inception",
+  "year": 2010,
+  "type": "movie",
+  "status": "watched",
+  "instagram": [],
+  "letterboxd": "https://boxd.it/1skk"
+ },
+ {
   "title": "Indecent Proposal",
   "year": 1993,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DZPwSd9sBa3/"
   ]
  },
  {
+  "title": "Insurgent",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Into the Woods",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "It",
+  "year": 2017,
+  "type": "movie",
+  "status": "watched",
+  "instagram": [],
+  "letterboxd": "https://boxd.it/bC8e"
+ },
+ {
+  "title": "It's Only the End of the World",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Jack Ryan: Shadow Recruit",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "John Wick",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Joker",
+  "year": 2019,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/h4cS",
+  "status": "watched",
+  "my_rating": 4.5,
+  "liked": true,
+  "instagram": []
+ },
+ {
+  "title": "Jumanji: Welcome to the Jungle",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Jupiter Ascending",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Justice League",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Kill Bill: Vol. 1",
+  "year": 2003,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/70w",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
+  "title": "Kill Bill: Vol. 2",
+  "year": 2004,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/2au4",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
+  "title": "King Arthur: Legend of the Sword",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Kiss Kiss Bang Bang",
   "year": 2005,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DSa7kXTDkGi/"
   ]
  },
  {
+  "title": "Klaus",
+  "year": 2019,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/ipoi",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
+  "title": "Knives Out",
+  "year": 2019,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/jWEA",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
   "title": "Kramer vs. Kramer",
   "year": 1979,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DTqOO2ODKu1/"
   ]
  },
  {
+  "title": "La La Land",
+  "year": null,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "La battaglia dei sessi",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "La furia di un uomo - Wrath of Man",
+  "year": null,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
   "title": "La leggenda del pianista sull'oceano",
   "year": 1998,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Dd407qBohgc/"
   ]
@@ -465,27 +1175,63 @@
   "title": "La meglio gioventù",
   "year": 2003,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DeHGO9aNUsr/"
   ]
+ },
+ {
+  "title": "La solita commedia - Inferno",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
  },
  {
   "title": "Ladies First",
   "year": null,
   "type": "movie",
   "check": true,
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DY3EBhKRs6B/"
   ]
+ },
+ {
+  "title": "Lamborghini: The Man Behind The Legend",
+  "year": null,
+  "type": "movie",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
+  "title": "Law Abiding Citizen",
+  "year": 2009,
+  "type": "movie",
+  "status": "to watch",
+  "tmdb_id": 22803,
+  "instagram": []
+ },
+ {
+  "title": "Lawless",
+  "year": null,
+  "type": "movie",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
+  "title": "Le Redoutable",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
  },
  {
   "title": "Le vie del Signore sono finite",
   "year": 1987,
   "type": "movie",
   "check": true,
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DerzFsRh1aa/"
   ]
@@ -494,16 +1240,24 @@
   "title": "Lenny",
   "year": 1974,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DYZLXw1sZUE/"
   ]
  },
  {
+  "title": "Les Misérables",
+  "year": 2012,
+  "type": "movie",
+  "status": "maybe watched",
+  "tmdb_id": 82695,
+  "instagram": []
+ },
+ {
   "title": "Lessons in Chemistry",
   "year": 2023,
   "type": "tv",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DTaN7O2ATqM/"
   ]
@@ -512,16 +1266,30 @@
   "title": "Lincoln",
   "year": 2012,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DT5l_L7jNqG/"
   ]
  },
  {
+  "title": "Lo chiamavano Jeeg Robot",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Logan",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Love & Other Drugs",
   "year": 2010,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DZ637H5uR8B/",
    "https://www.instagram.com/reel/DQeXDpeiEXS/"
@@ -531,25 +1299,35 @@
   "title": "Love Actually",
   "year": 2003,
   "type": "movie",
-  "status": "da vedere",
+  "status": "watched",
   "instagram": [
    "https://www.instagram.com/reel/DSEC7pojf3H/"
-  ]
+  ],
+  "letterboxd": "https://boxd.it/2aeU",
+  "my_rating": 5.0,
+  "liked": true
  },
  {
   "title": "Lucky Number Slevin",
   "year": 2006,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DXkHa2NjLUu/"
   ]
  },
  {
+  "title": "Macbeth",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Mad Max: Fury Road",
   "year": 2015,
   "type": "movie",
-  "status": "da vedere",
+  "status": "maybe watched",
   "instagram": [
    "https://www.instagram.com/reel/DbQGW8ZHRJz/"
   ]
@@ -558,7 +1336,7 @@
   "title": "Marshall",
   "year": 2017,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DaD8duNgpO8/"
   ]
@@ -567,16 +1345,30 @@
   "title": "Martin Eden",
   "year": 2019,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DehMBLNMQfU/"
   ]
  },
  {
+  "title": "Maze Runner: The Scorch Trials",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Mazinger Z: Infinity",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "McFarland, USA",
   "year": 2015,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DeedbHfTjQk/"
   ]
@@ -585,7 +1377,7 @@
   "title": "Me Before You",
   "year": 2016,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DSroc1kE6Kc/",
    "https://www.instagram.com/reel/DRU6tJcjr4o/"
@@ -595,7 +1387,7 @@
   "title": "Meet Joe Black",
   "year": 1998,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DcjA9PSMilM/"
   ]
@@ -604,45 +1396,107 @@
   "title": "Million Dollar Arm",
   "year": 2014,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DcHfRgmTOl1/"
   ]
  },
  {
+  "title": "Minions",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Mission: Impossible",
+  "year": 1996,
+  "type": "movie",
+  "status": "to watch",
+  "tmdb_id": 954,
+  "check": true,
+  "instagram": []
+ },
+ {
+  "title": "Mission: Impossible - Rogue Nation",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Moana",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Modern Love",
   "year": 2019,
   "type": "tv",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DbEyKLsBzD8/",
    "https://www.instagram.com/reel/DURhBMokb7k/"
   ]
  },
  {
+  "title": "Moneyball",
+  "year": 2011,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "My Left Foot",
   "year": 1989,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Dapcqx3t1X8/",
    "https://www.instagram.com/reel/DT5l_L7jNqG/"
   ]
  },
  {
+  "title": "Nightcrawler",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Nosferatu",
+  "year": 2024,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/f5eG",
+  "status": "watched",
+  "instagram": []
+ },
+ {
   "title": "Notting Hill",
   "year": 1999,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Dclh0dJvbLp/"
   ]
  },
  {
+  "title": "Now You See Me: Now You Don't",
+  "year": 2025,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/f3i2",
+  "status": "watched",
+  "my_rating": 4.5,
+  "liked": true,
+  "instagram": []
+ },
+ {
   "title": "Nuovo Cinema Paradiso",
   "year": 1988,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DZhvPwpsH9k/"
   ]
@@ -651,7 +1505,7 @@
   "title": "Nuremberg",
   "year": 2025,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DWToLh2j42f/"
   ]
@@ -661,17 +1515,36 @@
   "year": 2026,
   "type": "tv",
   "check": true,
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Dbdm8nRyVv4/"
   ]
+ },
+ {
+  "title": "One Battle After Another",
+  "year": 2025,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/DUHM",
+  "status": "watched",
+  "my_rating": 5.0,
+  "instagram": []
+ },
+ {
+  "title": "Oppenheimer",
+  "year": 2023,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/wUow",
+  "status": "watched",
+  "my_rating": 4.0,
+  "liked": true,
+  "instagram": []
  },
  {
   "title": "Over Your Dead Body",
   "year": 2026,
   "type": "movie",
   "check": true,
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DZSAOrrskth/"
   ]
@@ -680,17 +1553,52 @@
   "title": "Ozark",
   "year": 2017,
   "type": "tv",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DaIvlRqB2th/",
    "https://www.instagram.com/reel/DWA0pqXDCkH/"
   ]
  },
  {
+  "title": "Pan",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Pelé: Birth of a Legend",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Penguins of Madagascar",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Pirates of the Caribbean: Dead Men Tell No Tales",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Pokémon the Movie: I Choose You!",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Primal Fear",
   "year": 1996,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Dej80dbNpUX/",
    "https://www.instagram.com/reel/DXRw0zlia73/",
@@ -702,16 +1610,26 @@
   "title": "Prime",
   "year": 2005,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DbgWvS0yP6Q/"
   ]
  },
  {
+  "title": "Pulp Fiction",
+  "year": 1994,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/29Pq",
+  "status": "watched",
+  "my_rating": 5.0,
+  "liked": true,
+  "instagram": []
+ },
+ {
   "title": "Ray",
   "year": 2004,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/De66o_TR4FM/"
   ]
@@ -721,25 +1639,39 @@
   "year": 2018,
   "type": "movie",
   "tmdb_id": 644937,
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DdANPWiNUfd/"
   ]
  },
  {
+  "title": "Renegades- Commando d'assalto",
+  "year": null,
+  "type": "movie",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
   "title": "Return to Sender",
   "year": 2015,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DYkYpt7PSFM/"
   ]
  },
  {
+  "title": "Road House",
+  "year": null,
+  "type": "movie",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
   "title": "Roald Dahl's Matilda the Musical",
   "year": 2022,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Dbvho2bkdvD/"
   ]
@@ -748,7 +1680,7 @@
   "title": "Romanzo popolare",
   "year": 1974,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DesQCzCIxrZ/"
   ]
@@ -757,7 +1689,7 @@
   "title": "Run",
   "year": 2020,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DZJhReqxjPT/"
   ]
@@ -766,7 +1698,7 @@
   "title": "Runt",
   "year": 2020,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DblyluRzOlU/"
   ]
@@ -775,7 +1707,7 @@
   "title": "Sahara",
   "year": 2005,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DWi7v_2E6eG/"
   ]
@@ -784,7 +1716,7 @@
   "title": "Scary Movie 4",
   "year": 2006,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DdiJnfFzaRe/"
   ]
@@ -793,7 +1725,7 @@
   "title": "Scent of a Woman",
   "year": 1992,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DdzFafxOaQC/",
    "https://www.instagram.com/reel/De3z8jCxai8/",
@@ -802,19 +1734,61 @@
   ]
  },
  {
+  "title": "Sherlock Holmes: A Game of Shadows",
+  "year": 2011,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Sicario",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Silver Linings Playbook",
   "year": 2012,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Db67hZQtKE6/"
   ]
  },
  {
+  "title": "Sin City: A Dame to Kill For",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Smetto quando voglio: Masterclass",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Snowden",
+  "year": 2016,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "Snowpiercer",
+  "year": null,
+  "type": "movie",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
   "title": "Soul",
   "year": 2020,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/De2XfKKzPOE/"
   ]
@@ -823,7 +1797,7 @@
   "title": "Speak No Evil",
   "year": 2024,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DT7puV3DMkj/"
   ]
@@ -832,25 +1806,53 @@
   "title": "Speechless",
   "year": 2016,
   "type": "tv",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DWUxx0sEfLA/"
   ]
  },
  {
+  "title": "Spider-Man: Homecoming",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Splitsville",
   "year": 2025,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DXKDIlxjUZK/"
   ]
  },
  {
+  "title": "Spotlight",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Stand Up Guys",
+  "year": null,
+  "type": "movie",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
+  "title": "Star Wars: The Force Awakens",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Still Alice",
   "year": 2014,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Dbsy0DCtwpy/",
    "https://www.instagram.com/reel/DYFQOYeoFnr/"
@@ -860,7 +1862,7 @@
   "title": "Stronger",
   "year": 2017,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DZDHBkiB1Lc/"
   ]
@@ -869,16 +1871,24 @@
   "title": "Succession",
   "year": 2018,
   "type": "tv",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DPm2PhijN49/"
   ]
  },
  {
+  "title": "Superman",
+  "year": 2025,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/E9IU",
+  "status": "watched",
+  "instagram": []
+ },
+ {
   "title": "Swan Song",
   "year": 2021,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DaTvC5GOJFU/"
   ]
@@ -887,16 +1897,30 @@
   "title": "Sweet November",
   "year": 2001,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DYhRmPpPCxn/"
   ]
  },
  {
+  "title": "Tale of Tales",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Teenage Mutant Ninja Turtles",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Thank You for Smoking",
   "year": 2005,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DScwPjQEpvS/"
   ]
@@ -905,52 +1929,97 @@
   "title": "The Accountant",
   "year": 2016,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DeLGkE6gbQ3/"
   ]
  },
  {
+  "title": "The Assignment",
+  "year": 2016,
+  "type": "movie",
+  "tmdb_id": 399173,
+  "check": true,
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "The Aviator",
   "year": 2004,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Dclpkr0TSpp/"
   ]
  },
  {
+  "title": "The BFG",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "The Banker",
   "year": 2020,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DavMNncBQdq/"
   ]
  },
  {
+  "title": "The Batman",
+  "year": 2022,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/eDGs",
+  "status": "watched",
+  "instagram": []
+ },
+ {
   "title": "The Bear",
   "year": 2022,
   "type": "tv",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DWZwXlxj8To/"
   ]
  },
  {
+  "title": "The Big Lebowski",
+  "year": null,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "The Big Short",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "The Boys Are Back",
   "year": 2009,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DaJ5jImM-9w/"
   ]
  },
  {
+  "title": "The Broken Key",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "The Change-Up",
   "year": 2011,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Db4fOeYhNOp/"
   ]
@@ -959,7 +2028,7 @@
   "title": "The Crown",
   "year": 2016,
   "type": "tv",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DQp9M5Ljy2o/"
   ]
@@ -968,34 +2037,80 @@
   "title": "The Curious Case of Benjamin Button",
   "year": 2008,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Dcj1bj9o886/"
   ]
  },
  {
+  "title": "The Dark Knight",
+  "year": 2008,
+  "type": "movie",
+  "status": "watched",
+  "instagram": [],
+  "letterboxd": "https://boxd.it/2b0k",
+  "my_rating": 5.0,
+  "liked": true
+ },
+ {
+  "title": "The Dark Knight",
+  "year": null,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "The Dark Knight Rises",
+  "year": 2012,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "The Devil All the Time",
   "year": 2020,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DcUdkdMOns0/"
   ]
  },
  {
+  "title": "The Dictator",
+  "year": 2012,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "The Edge of Seventeen",
   "year": 2016,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Daln1viMO7O/"
   ]
  },
  {
+  "title": "The Equalizer",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "The Fantastic 4: First Steps",
+  "year": 2025,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/mP6C",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
   "title": "The Father",
   "year": 2020,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DSVDi1hDrwQ/"
   ]
@@ -1004,7 +2119,7 @@
   "title": "The Fighter",
   "year": 2010,
   "type": "movie",
-  "status": "da vedere",
+  "status": "maybe watched",
   "instagram": [
    "https://www.instagram.com/reel/DaxuymPsi3B/",
    "https://www.instagram.com/reel/DRcT2U_EhQ4/"
@@ -1014,7 +2129,7 @@
   "title": "The Firm",
   "year": 1993,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DcRTn6XyVzA/"
   ]
@@ -1023,62 +2138,182 @@
   "title": "The Flying Scotsman",
   "year": 2006,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DV4sy4DNRVD/"
   ]
  },
  {
+  "title": "The Freshmen",
+  "year": 2018,
+  "type": "movie",
+  "status": "watched",
+  "tmdb_id": 463858,
+  "instagram": []
+ },
+ {
+  "title": "The Gentlemen",
+  "year": null,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "The Godfather",
+  "year": 1972,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/2aNK",
+  "status": "watched",
+  "instagram": []
+ },
+ {
   "title": "The Good Wife",
   "year": 2009,
   "type": "tv",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DVvJZLRjpve/"
   ]
+ },
+ {
+  "title": "The Grand Budapest Hotel",
+  "year": 2014,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/3ZqO",
+  "status": "watched",
+  "my_rating": 5.0,
+  "liked": true,
+  "instagram": []
+ },
+ {
+  "title": "The Grand Tour",
+  "year": 2016,
+  "type": "tv",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "The Handmaiden",
+  "year": 2016,
+  "type": "movie",
+  "tmdb_id": 290098,
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "The Hateful Eight",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "The Hitman's Bodyguard",
+  "year": null,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "The Hobbit: The Battle of the Five Armies",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
  },
  {
   "title": "The Hummingbird Project",
   "year": 2018,
   "type": "movie",
   "check": true,
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DcEPYsAJ0gX/"
   ]
  },
  {
+  "title": "The Hunger Games",
+  "year": 2012,
+  "type": "movie",
+  "letterboxd": "https://boxd.it/2uds",
+  "status": "watched",
+  "liked": true,
+  "instagram": []
+ },
+ {
   "title": "The Hunger Games: Catching Fire",
   "year": 2013,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Da75fxavBfy/"
   ]
  },
  {
+  "title": "The Hunger Games: Mockingjay - Part 1",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "The Hunger Games: Mockingjay - Part 2",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "The Imaginarium of Doctor Parnassus",
   "year": 2009,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Dcysw2sygXi/"
   ]
  },
  {
+  "title": "The Infiltrator",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "The Judge",
+  "year": 2014,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
+  "title": "The Last Samurai",
+  "year": 2003,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "The Legend of Bagger Vance",
   "year": 2000,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DbKScCnozUQ/"
   ]
  },
  {
+  "title": "The Legend of Tarzan",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "The Life of David Gale",
   "year": 2003,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DRyhHYwjhfb/"
   ]
@@ -1087,16 +2322,51 @@
   "title": "The Long Weekend",
   "year": 2005,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DaCEdoUSVLW/"
   ]
  },
  {
+  "title": "The Magnificent Seven",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "The Man from U.N.C.L.E.",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "The Martian",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "The Mask",
+  "year": 1994,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "The Maze Runner",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "The Nanny Diaries",
   "year": 2007,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DaRdy0VOI2F/"
   ]
@@ -1106,25 +2376,46 @@
   "year": 2014,
   "type": "movie",
   "check": true,
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DVjfXtIDFp6/"
   ]
  },
  {
+  "title": "The Nut Job",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "The Paris Opera",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "The Peanut Butter Falcon",
   "year": 2019,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DaiQnY8CAfy/"
   ]
  },
  {
+  "title": "The Pursuit of Happyness",
+  "year": 2006,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
   "title": "The Raffle",
   "year": 1991,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DPrMuHeEtKu/"
   ]
@@ -1133,17 +2424,31 @@
   "title": "The Real Wolf of Wall Street",
   "year": 2025,
   "type": "tv",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DbPtlsIuVD3/"
   ]
+ },
+ {
+  "title": "The Revenant",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "The Salt of the Earth",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
  },
  {
   "title": "The Secret Path",
   "year": 2016,
   "type": "movie",
   "check": true,
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DZC_L1HKOoU/"
   ]
@@ -1152,7 +2457,7 @@
   "title": "The Space Between Us",
   "year": 2017,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Dc1GfKXhGpW/"
   ]
@@ -1161,16 +2466,23 @@
   "title": "The Talented Mr. Ripley",
   "year": 1999,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DbLnndjk_OB/"
   ]
  },
  {
+  "title": "The Tender Bar",
+  "year": null,
+  "type": "movie",
+  "status": "watched",
+  "instagram": []
+ },
+ {
   "title": "The Threesome",
   "year": 2025,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DeqxrmjI4lk/"
   ]
@@ -1179,16 +2491,19 @@
   "title": "The Truman Show",
   "year": 1998,
   "type": "movie",
-  "status": "da vedere",
+  "status": "watched",
   "instagram": [
    "https://www.instagram.com/reel/Ddt-DhuxM61/"
-  ]
+  ],
+  "letterboxd": "https://boxd.it/18U8",
+  "my_rating": 5.0,
+  "liked": true
  },
  {
   "title": "The Untouchables",
   "year": 1987,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DehFAYGlC9-/"
   ]
@@ -1198,35 +2513,94 @@
   "year": 2017,
   "type": "movie",
   "check": true,
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DchAorezM01/"
   ]
  },
  {
+  "title": "The Wolf of Wall Street",
+  "year": 2013,
+  "type": "movie",
+  "status": "watched",
+  "instagram": [],
+  "letterboxd": "https://boxd.it/3C1m",
+  "my_rating": 5.0,
+  "liked": true
+ },
+ {
+  "title": "The lobster",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "There Will Be Blood",
   "year": 2007,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DWJhIScPA2q/",
    "https://www.instagram.com/reel/DT5l_L7jNqG/"
   ]
  },
  {
+  "title": "Thor: Ragnarok",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Togo",
   "year": 2019,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DaqXE6SiRx9/"
   ]
  },
  {
+  "title": "Toni Erdmann",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Top Gun",
+  "year": 1986,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Tower Heist",
+  "year": 2011,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Transcendence",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "Transformers: Age of Extinction",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Tu ridi",
   "year": 1998,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DdtJKnQof4P/"
   ]
@@ -1236,7 +2610,7 @@
   "year": 2026,
   "type": "movie",
   "tmdb_id": 1340206,
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DYFRpnLFcPr/"
   ]
@@ -1245,7 +2619,7 @@
   "title": "Tár",
   "year": 2022,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DcLru4jM-ev/",
    "https://www.instagram.com/reel/DWRHYPlk_-7/"
@@ -1255,7 +2629,7 @@
   "title": "Untamed Heart",
   "year": 1993,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Dbi2G_MtIKc/"
   ]
@@ -1264,7 +2638,7 @@
   "title": "Unthinkable",
   "year": 2010,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DWBmWa2iIon/"
   ]
@@ -1273,7 +2647,7 @@
   "title": "Up in the Air",
   "year": 2009,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DZ7_y4ZTxbO/"
   ]
@@ -1282,16 +2656,37 @@
   "title": "Vanilla Sky",
   "year": 2001,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/p/DcMLuSrRNl7/"
   ]
  },
  {
+  "title": "WARRIOR",
+  "year": null,
+  "type": "movie",
+  "status": "to watch",
+  "instagram": []
+ },
+ {
+  "title": "War for the Planet of the Apes",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "We Are X",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "WeCrashed",
   "year": 2022,
   "type": "tv",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Dc1E6LrJR8R/"
   ]
@@ -1300,7 +2695,7 @@
   "title": "What's Eating Gilbert Grape",
   "year": 1993,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DbUh9kpT1OF/",
    "https://www.instagram.com/reel/DUTvMw9DNhC/"
@@ -1310,7 +2705,7 @@
   "title": "Wild Horse Nine",
   "year": 2026,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/p/DeuHb1vgkbX/"
   ]
@@ -1319,27 +2714,844 @@
   "title": "With Honors",
   "year": 1994,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/Depp8lhoM14/"
   ]
  },
  {
+  "title": "X-Men: Days of Future Past",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "Young Woman and the Sea",
   "year": 2024,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DVhFRw6FLfo/"
   ]
  },
  {
+  "title": "Youth",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "a man called ove",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "alien: covenant",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "alla ricerca di dory",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "animali fantastici e dove trovarli",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "animali notturni",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "ant-man",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "arrival",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "assassinio sull'orient Express",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "big Hero 6",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "blackhat",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "blade runner 2049",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "boyhood",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "brutti e cattivi",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "captain America: civil war",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "captain America: the Winter soldier",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "carol",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "cars 3",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "coco",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "crooked house",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "divergent",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "doctor strange",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "downsizing",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "dracula untold",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "due giorni, una notte",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "dunkirk",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "elle",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "everest",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "ex machina",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "fortunata",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "fuocoammare",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "geostorm",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "ghost in the shell",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "gli asteroidi",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "godzilla",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "good time",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "grand Budapest hotel",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "hell or High water",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "hits",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "hotel Transilvania 2",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "il giovane favoloso",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "il libro della giungla",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "il piccolo principe",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "il ragazzo invisibile",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "il ragno rosso",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "indivisibili",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "inside out",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "interstellar",
+  "year": 2014,
+  "type": "movie",
+  "status": "watched",
+  "instagram": [],
+  "letterboxd": "https://boxd.it/4VZ8"
+ },
+ {
+  "title": "io, Daniel Blake",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "irrational man",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "jackie",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "joy",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "jurassic world",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "kingsman: il cerchio d'oro",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "kong skull island",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "l'estate addosso",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "la bella e la bestia",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "la la Land",
+  "year": 2016,
+  "type": "movie",
+  "status": "watched",
+  "instagram": [],
+  "letterboxd": "https://boxd.it/a5fa",
+  "my_rating": 3.0,
+  "liked": true
+ },
+ {
+  "title": "la mia vita da zucchina",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "la pazza gioia",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "la teoria del tutto",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "le meraviglie",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "leatherface",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "lego Batman il film",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "lucy",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "magic in the moonlight",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "maleficent",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "manchester by the Sea",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "mia madre",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "mommy",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "monster family",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "my name is Adil",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "my name is Emily",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "neruda",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "noah",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "non essere cattivo",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "ouija",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "paterson",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "perfetti sconosciuti",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "personal shopper",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "pets - vita da animali",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "pride",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "robocop",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "rogue One: a star wars Story",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "room",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "saw: Legacy",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "sing street",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "spectre",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "star wars: gli ultimi jedi",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "suburbicon",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "suburra",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "suicide squad",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "sully",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "terminator genisys",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "the Amazing Spider-Man 2",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "the Lego movie",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "the assassin",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "the big sick",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "the imitation game",
+  "year": 2014,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "the neon demon",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "the nice guys",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "the visit",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "the void",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "the zookeeper's wife",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
   "title": "tick, tick... BOOM!",
   "year": 2021,
   "type": "movie",
-  "status": "da vedere",
+  "status": "to watch",
   "instagram": [
    "https://www.instagram.com/reel/DZ5D43xzsfo/"
   ]
+ },
+ {
+  "title": "tomorrowland",
+  "year": 2015,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "transformers: l'ultimo cavaliere",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "tre manifesti a ebbing, Missouri",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "tutti vogliono qualcosa",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "una donna fantastica",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "valerian e la città dei mille pianeti",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "veloce come il vento",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "vittoria e Abdul",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "whiplash",
+  "year": 2014,
+  "type": "movie",
+  "status": "watched",
+  "instagram": [],
+  "letterboxd": "https://boxd.it/7bQA"
+ },
+ {
+  "title": "wonder woman",
+  "year": 2017,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
+ },
+ {
+  "title": "zootropolis",
+  "year": 2016,
+  "type": "movie",
+  "status": "maybe watched",
+  "instagram": []
  }
 ]

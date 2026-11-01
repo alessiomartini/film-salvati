@@ -35,9 +35,9 @@
   root.innerHTML = [
     '<button type="button" class="notes-widget__toggle" aria-expanded="false">Feedback</button>',
     '<div class="notes-widget__panel" hidden>',
-    '  <label class="notes-widget__label" for="notes-widget-text">Bug, idee, film da aggiungere</label>',
+    '  <label class="notes-widget__label" for="notes-widget-text">Bugs, ideas, films to add</label>',
     '  <textarea id="notes-widget-text" class="notes-widget__text" rows="5"',
-    '    maxlength="' + MAX_TEXT + '" placeholder="Cosa cambieresti? (pagina, filtri e film aperto vengono allegati)"></textarea>',
+    '    maxlength="' + MAX_TEXT + '" placeholder="What would you change? (page, filters and open title are attached)"></textarea>',
     // Honeypot: hidden from people, irresistible to form-filling bots. The
     // Worker discards anything that arrives with it filled in.
     '  <div class="notes-widget__hp" aria-hidden="true">',
@@ -45,8 +45,8 @@
     '    <input id="notes-widget-website" name="website" type="text" tabindex="-1" autocomplete="off">',
     '  </div>',
     '  <div class="notes-widget__row">',
-    '    <button type="button" class="notes-widget__save">Invia</button>',
-    '    <button type="button" class="notes-widget__cancel">Annulla</button>',
+    '    <button type="button" class="notes-widget__save">Send</button>',
+    '    <button type="button" class="notes-widget__cancel">Cancel</button>',
     '    <span class="notes-widget__status" role="status"></span>',
     '  </div>',
     '</div>',
@@ -117,13 +117,13 @@
   save.addEventListener('click', function () {
     var body = text.value.trim();
     if (!body) {
-      setStatus('Scrivi qualcosa prima.', 'error');
+      setStatus('Write something first.', 'error');
       text.focus();
       return;
     }
 
     save.disabled = true;
-    setStatus('Invio…');
+    setStatus('Sending…');
 
     fetch(WORKER_URL, {
       method: 'POST',
@@ -140,7 +140,7 @@
         if (!response.ok) throw new Error('HTTP ' + response.status);
         text.value = '';
         saveDraft();
-        setStatus('Inviato, grazie!', 'ok');
+        setStatus('Sent, thanks!', 'ok');
         setTimeout(function () {
           if (!panel.hidden) close();
         }, 900);
@@ -148,7 +148,7 @@
       .catch(function (error) {
         // Never fail silently: a note the reader believes was saved and was
         // not is worse than no note box at all.
-        setStatus('Non inviato (la bozza resta qui) — ' + error.message, 'error');
+        setStatus('Not sent (your draft is kept) — ' + error.message, 'error');
       })
       .finally(function () {
         save.disabled = false;

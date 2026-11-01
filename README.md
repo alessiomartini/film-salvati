@@ -1,8 +1,8 @@
-# Film salvati
+# Saved Films (Film salvati)
 
 La mia libreria di film e serie: cosa ho visto, cosa voglio vedere, e per ogni titolo una scheda
 con copertina, trama, regista, attori, durata, lingua originale, voti, trailer, dove vederlo in
-streaming (Olanda e Italia) e i link alle schede su IMDb, Letterboxd, TMDB e ai post Instagram
+streaming (Olanda e Italia). Il sito è in inglese, con i titoli in lingua originale + inglese. Ci sono anche i link alle schede su IMDb, Letterboxd, TMDB e ai post Instagram
 da cui l'ho salvato.
 
 Sito statico senza build (`index.html`, `app.js`, `style.css`) + due script Python (solo stdlib).
