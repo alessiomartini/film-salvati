@@ -226,6 +226,7 @@
   "title": "Demolition",
   "year": 2015,
   "type": "movie",
+  "tmdb_id": 303991,
   "status": "da vedere",
   "instagram": [
    "https://www.instagram.com/reel/DX4QBUKItDv/",
@@ -290,6 +291,7 @@
   "title": "Enemy",
   "year": 2013,
   "type": "movie",
+  "tmdb_id": 181886,
   "status": "da vedere",
   "instagram": [
    "https://www.instagram.com/reel/DVRETNaiL81/"
@@ -716,9 +718,9 @@
  },
  {
   "title": "Red",
-  "year": 2009,
+  "year": 2018,
   "type": "movie",
-  "check": true,
+  "tmdb_id": 644937,
   "status": "da vedere",
   "instagram": [
    "https://www.instagram.com/reel/DdANPWiNUfd/"
@@ -1231,8 +1233,9 @@
  },
  {
   "title": "Tuner",
-  "year": 2025,
+  "year": 2026,
   "type": "movie",
+  "tmdb_id": 1340206,
   "status": "da vedere",
   "instagram": [
    "https://www.instagram.com/reel/DYFRpnLFcPr/"
