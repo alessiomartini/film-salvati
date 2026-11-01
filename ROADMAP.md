@@ -51,6 +51,7 @@ Unico file per il futuro e il passato del progetto, letto da Projects Overview
 - [ ] GitHub Action settimanale: riaggiorna disponibilità streaming e voti (chiavi come secrets)
 
 ## Idee
+- [ ] Cambiare lo stato di un titolo dal sito (solo Alessio, backend su site-notes/Cloudflare) per correggere i "maybe watched"
 - [ ] Compositore della colonna sonora, con link a music-library
 - [ ] "Tratto da" (libro, storia vera, opera teatrale)
 - [ ] Location delle riprese
