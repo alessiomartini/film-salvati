@@ -13,8 +13,9 @@ Unico file per il futuro e il passato del progetto, letto da Projects Overview
 ## Setup
 - [x] Repo `film-salvati` con README, CLAUDE.md, ROADMAP
 - [x] Scheda in projects-overview e link in home.html
-- [ ] Rendere pubblico il repo e attivare GitHub Pages (account free: Pages solo su repo pubblici)
-- [ ] Aggiungere `film-salvati` a `SITES` in site-notes e fare `wrangler deploy`
+- [x] Rendere pubblico il repo e attivare GitHub Pages (dal branch main): https://alessiomartini.github.io/film-salvati/
+- [x] Aggiungere `film-salvati` a `SITES` in site-notes
+- [ ] `wrangler deploy` di site-notes (lo lancia Alessio), poi provare il Feedback dal sito
 
 ## Primo risultato: post Instagram
 - [x] Import delle 3 raccolte Instagram (189 post, 145 titoli)
@@ -63,13 +64,13 @@ Fonti dati: TMDB (gratis, con attribuzione) per scheda, trailer e disponibilità
 JustWatch); OMDb per i voti IMDb/RT/Metacritic; Wikidata per Wikipedia, premi e ID degli altri siti.
 Letterboxd non ha API pubblica: per ora solo il link (`letterboxd.com/tmdb/<id>` porta alla scheda).
 
-Instagram: le tre raccolte ("Movies", "movie", "movie con marti") vengono importate tutte, senza
+Instagram: le tre raccolte di film vengono importate tutte (nomi solo in `.env`), senza
 tag di provenienza (scelta di Alessio, 2026-11-01). Le caption non vengono pubblicate (copyright),
 solo il link al post. Il riconoscimento dei titoli l'ha fatto Claude leggendo le caption: 14 post
 non sono film (musica, motivazionali, pubblicità), 6 non si capiscono dalla caption (serve il video).
 
-Repo privato finché Alessio non decide di renderlo pubblico: con l'account free GitHub Pages
-richiede un repo pubblico.
+Repo reso pubblico il 2026-11-01 (con l'account free GitHub Pages richiede un repo pubblico).
+Pages servito direttamente dal branch main, senza workflow: non c'è build.
 
 ## Log
-- 2026-11-01: progetto avviato: import Instagram (145 titoli), script TMDB, sito con griglia, filtri e schede.
+- 2026-11-01: progetto avviato: import Instagram (145 titoli), script TMDB, sito con griglia, filtri e schede; repo pubblico e sito online su GitHub Pages.

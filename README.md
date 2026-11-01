@@ -15,7 +15,7 @@ python -I scripts/enrich.py           # TMDB -> data/library.json (serve TMDB_KE
 ```
 
 1. `import_sources.py` legge l'export Instagram più recente in `E:\Alessio\Dati-personali\meta\`
-   (raccolte "Movies", "movie", "movie con marti"). Il titolo di ogni post sta in
+   (le raccolte elencate in `.env` come `IG_COLLECTIONS=nome1|nome2`). Il titolo di ogni post sta in
    `data/matches.json`: i post nuovi vengono elencati come "manca in matches.json" e vanno
    aggiunti lì (a mano o chiedendo a Claude, che legge le caption in `cache/ig-posts.json`).
 2. `enrich.py` cerca ogni titolo su TMDB e scrive `data/library.json`. Le risposte restano in
@@ -25,6 +25,7 @@ Chiave TMDB: themoviedb.org → Impostazioni → API, poi nel file `.env` (mai i
 
 ```
 TMDB_KEY=...
+IG_COLLECTIONS=...
 ```
 
 ## Anteprima locale

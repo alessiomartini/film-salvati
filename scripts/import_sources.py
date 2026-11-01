@@ -17,7 +17,19 @@ import zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATI = r"E:\Alessio\Dati-personali"
-IG_COLLECTIONS = {"Movies", "movie", "movie con marti"}
+# Nomi delle raccolte da importare, separati da "|", in .env (privati: il repo è pubblico).
+IG_COLLECTIONS = set()  # riempito da load_env()
+
+
+def load_env():
+    global IG_COLLECTIONS
+    path = os.path.join(ROOT, ".env")
+    if os.path.exists(path):
+        for line in open(path, encoding="utf-8"):
+            k, _, v = line.strip().partition("=")
+            if k and not k.startswith("#"):
+                os.environ.setdefault(k, v.strip())
+    IG_COLLECTIONS = set(filter(None, os.environ.get("IG_COLLECTIONS", "").split("|")))
 
 
 def fix_mojibake(s):
@@ -64,6 +76,9 @@ def instagram_posts(zip_path):
 
 
 def main():
+    load_env()
+    if not IG_COLLECTIONS:
+        sys.exit('Manca IG_COLLECTIONS in .env (es. IG_COLLECTIONS=Movies|movie).')
     zips = sys.argv[1:] or sorted(glob.glob(os.path.join(DATI, "meta", "instagram-*.zip")))[-1:]
     posts = instagram_posts(zips[0])
     os.makedirs(os.path.join(ROOT, "cache"), exist_ok=True)
