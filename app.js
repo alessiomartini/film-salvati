@@ -71,7 +71,9 @@ function filtered() {
     (!f.service || services(t, f.country).includes(f.service)) &&
     (!f.runtime || (t.runtime && t.runtime <= +f.runtime)) &&
     (!f.decade || (t.year && Math.floor(t.year / 10) * 10 === +f.decade)) &&
-    (!f.lang || t.original_language === f.lang));
+    (!f.lang || t.original_language === f.lang) &&
+    (!f.awards || (f.awards === 'oscar' ? t.major_awards?.Oscar : awardText(t))) &&
+    (!f.content || (f.content === 'no-sex' ? !hasSex(t) : f.content === 'no-violence' ? !hasViolence(t) : !hasSex(t) && !hasViolence(t))));
   const by = {
     title: (a, b) => name(a).localeCompare(name(b)),
     year: (a, b) => (b.year || 0) - (a.year || 0),
@@ -133,6 +135,34 @@ function statusButtons(t) {
     `<button type="button" data-set="${s}" data-id="${esc(t.id)}" class="${t.status === s ? 'on' : ''}">${label}</button>`).join('')}</div>`;
 }
 
+// Bollini: premi importanti (Wikidata), nudità/sesso e violenza (Kids-in-Mind >= 5/10, o TMDB).
+function awardText(t) {
+  const m = t.major_awards || {};
+  return Object.entries(m).map(([k, n]) => (n > 1 ? `${n} ${k}s` : k)).join(', ');
+}
+const hasSex = (t) => !!t.content?.sex_flag;
+const hasViolence = (t) => !!t.content?.violence_flag;
+
+function flags(t) {
+  return [
+    t.type === 'tv' && '<span class="flag">Series</span>',
+    awardText(t) && `<span class="flag award" title="${esc(awardText(t))}">🏆</span>`,
+    hasSex(t) && '<span class="flag" title="Nudity / sex">🔞</span>',
+    hasViolence(t) && '<span class="flag" title="Violence">🩸</span>',
+  ].filter(Boolean).join('');
+}
+
+function contentHtml(t) {
+  const c = t.content;
+  if (!c) return '';
+  if (c.source === 'kim') {
+    return `<p>Sex/nudity <strong>${c.sex}/10</strong> · Violence/gore <strong>${c.violence}/10</strong> · Language <strong>${c.language}/10</strong>
+      · <a href="${esc(c.url)}" target="_blank" rel="noopener">Kids-in-Mind</a></p>`;
+  }
+  const what = [c.sex_flag && 'nudity/sex', c.violence_flag && 'violence'].filter(Boolean).join(' and ');
+  return what ? `<p>Contains ${what} (from TMDB keywords and age-rating descriptors, no detailed score).</p>` : '';
+}
+
 const STATUS_BADGE = {
   watched: '<span class="status s-watched">✓ Watched</span>',
   'maybe watched': '<span class="status s-maybe">Maybe watched</span>',
@@ -146,7 +176,7 @@ function render() {
     <button class="card" type="button" data-id="${esc(t.id)}">
       <div class="poster">
         ${STATUS_BADGE[t.status] || ''}
-        ${t.type === 'tv' ? '<span class="badge">Series</span>' : ''}
+        <div class="flags">${flags(t)}</div>
         ${t.check ? '<span class="badge check" title="Title guessed from the saved post, to be confirmed">?</span>' : ''}
         ${t.poster ? `<img src="${esc(t.poster)}" alt="" loading="lazy">` : esc(name(t))}
       </div>
@@ -205,6 +235,10 @@ function openSheet(t) {
       </div>
     </div>
     ${t.overview ? `<section><h3>Plot</h3><p>${esc(t.overview)}</p></section>` : ''}
+    ${awardText(t) || t.awards?.length ? `<section><h3>Awards</h3>
+      ${awardText(t) ? `<p>🏆 <strong>${esc(awardText(t))}</strong></p>` : ''}
+      ${t.awards?.length ? `<details><summary>All ${t.awards.length} awards (Wikidata)</summary>${chips(t.awards)}</details>` : ''}</section>` : ''}
+    ${contentHtml(t) ? `<section><h3>Content</h3>${contentHtml(t)}</section>` : ''}
     ${t.cast.length ? `<section><h3>Cast</h3>${chips(t.cast)}</section>` : ''}
     ${t.tmdb_id ? `<section><h3>Where to watch</h3>${providersHtml(t)}</section>` : ''}
     ${links ? `<section><h3>Pages</h3><p>${links}</p></section>` : ''}

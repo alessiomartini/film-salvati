@@ -27,8 +27,9 @@ Unico file per il futuro e il passato del progetto, letto da Projects Overview
 
 ## Arricchimento completo
 - [ ] OMDb: voti IMDb, Rotten Tomatoes, Metacritic
-- [ ] Wikidata: link Wikipedia IT/EN, premi vinti e nomination, link a Rotten Tomatoes/Metacritic/MUBI/MYmovies
-- [ ] Contenuti: violenza, nudo, sesso (IMDb Parents Guide), con età consigliata come fallback
+- [x] Wikidata: premi vinti e link Wikipedia (EN)
+- [ ] Wikidata: nomination, link a Rotten Tomatoes/Metacritic/MUBI/MYmovies
+- [x] Contenuti: bollini nudità/sesso e violenza (Kids-in-Mind, ripiego TMDB) e filtri
 - [ ] Voto Letterboxd
 
 ## Import personali
@@ -57,7 +58,6 @@ Unico file per il futuro e il passato del progetto, letto da Projects Overview
 - [ ] "Tratto da" (libro, storia vera, opera teatrale)
 - [ ] Location delle riprese
 - [ ] Bechdel test (bechdeltest.com)
-- [ ] Premi come badge (Oscar, Cannes, Venezia, Berlino)
 - [ ] Film simili che ho già visto
 - [ ] Film e serie in olandese per esercitarsi con la lingua
 - [ ] Uscite al cinema in arrivo dei titoli salvati
@@ -94,9 +94,18 @@ incolla una volta nel suo browser (pulsante Edit). I clic ravvicinati diventano 
 il salvataggio fallisce restano nel browser. `overrides.json` vince sugli stati calcolati dagli
 script. Scartato un Worker su site-notes: serviva login e deploy per una sola persona.
 
+Contenuti: IMDb Parents Guide scartato, blocca le richieste automatiche (403 / sfida anti-bot) e
+non va aggirato. Usato Kids-in-Mind (robots: Allow, `use=reference`): punteggi 0-10 per
+sesso/nudità, violenza, linguaggio, letti dai risultati di ricerca; bollino da 5/10. Copre
+soprattutto film USA dagli anni '90: per gli altri ripiego su descrittori di classificazione e parole
+chiave TMDB (solo sì/no, copertura parziale: un film senza bollino non è garantito "pulito").
+Premi da Wikidata (P166); "importanti" = Oscar, Palma d'oro, Leone d'oro, Orso d'oro, Golden Globe,
+BAFTA, César, David di Donatello, Emmy.
+
 Repo reso pubblico il 2026-11-01 (con l'account free GitHub Pages richiede un repo pubblico).
 Pages servito direttamente dal branch main, senza workflow: non c'è build.
 
 ## Log
+- 2026-11-01: bollini premi (Wikidata) e contenuti (Kids-in-Mind/TMDB), filtri relativi, link Wikipedia.
 - 2026-11-01: stato visibile sulle copertine e modificabile dal sito (overrides.json via API GitHub).
 - 2026-11-01: import di Keep, Letterboxd e Prime Video (445 titoli), sito in inglese con titoli originali + inglese; arricchimento TMDB dei 145 titoli (copertine, trama, cast, trailer, streaming NL/IT), Feedback attivo; progetto avviato: import Instagram (145 titoli), script TMDB, sito con griglia, filtri e schede; repo pubblico e sito online su GitHub Pages.

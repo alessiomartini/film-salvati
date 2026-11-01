@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Saved Films</title>
   <meta name="description" content="Alessio's library of films and series: watched, to watch, and where to stream them.">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
   <header class="top">
@@ -32,6 +32,13 @@
     </select>
     <select name="decade" aria-label="Decade"><option value="">All decades</option></select>
     <select name="lang" aria-label="Original language"><option value="">All languages</option></select>
+    <select name="awards" aria-label="Awards">
+      <option value="">Any awards</option><option value="major">🏆 Major award winners</option><option value="oscar">🏆 Oscar winners</option>
+    </select>
+    <select name="content" aria-label="Content">
+      <option value="">Any content</option><option value="no-sex">No 🔞 nudity/sex</option>
+      <option value="no-violence">No 🩸 violence</option><option value="none">Neither</option>
+    </select>
     <select name="sort" aria-label="Sort">
       <option value="title">Sort: title</option><option value="year">Sort: newest</option>
       <option value="rating">Sort: rating</option><option value="saves">Sort: most saved</option><option value="mine">Sort: my rating</option>
@@ -44,11 +51,15 @@
 
   <footer class="foot">
     Film and series data from <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDB</a>,
+    awards from <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a>,
+    content scores from <a href="https://kids-in-mind.com/" target="_blank" rel="noopener">Kids-in-Mind</a>,
     streaming availability from <a href="https://www.justwatch.com/" target="_blank" rel="noopener">JustWatch</a>.
+    🏆 major award (Oscar, Cannes, Venice, Berlin, Golden Globe, BAFTA, César, David, Emmy) ·
+    🔞 nudity/sex · 🩸 violence (Kids-in-Mind 5/10 or more, otherwise TMDB keywords).
     This product uses the TMDB API but is not endorsed or certified by TMDB.
   </footer>
 
-  <script src="app.js?v=5"></script>
+  <script src="app.js?v=6"></script>
   <script src="js/notes-widget.js?v=2"></script>
 </body>
 </html>
