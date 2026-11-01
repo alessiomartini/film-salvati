@@ -7,6 +7,7 @@ Le risposte grezze restano in cache/tmdb/ (gitignored): rilanciare costa solo i 
 Uso: python -I scripts/enrich.py [--limit N] [--refresh]
 """
 import json
+import re
 import os
 import sys
 import time
@@ -97,6 +98,104 @@ def providers(d):
     return out
 
 
+# --- Contenuti (nudità/sesso, violenza) ---
+# Fonte principale: Kids-in-Mind (punteggi 0-10, soprattutto film USA dagli anni '90; robots: Allow,
+# use=reference). Ripiego: descrittori di classificazione e parole chiave TMDB (solo sì/no).
+SEX_WORDS = ("nudity", "sex scene", "explicit sex", "simulated sex", "erotic", "nude", "naked", "softcore")
+VIOLENCE_WORDS = ("violence", "gore", "brutality", "torture", "bloody", "splatter")
+KIM_THRESHOLD = 5  # punteggio KiM da cui compare il bollino
+
+
+def tmdb_content(keywords, descriptors):
+    words = [w.lower() for w in keywords + descriptors]
+    return {
+        "sex_flag": any(s in w for w in words for s in SEX_WORDS) or any(w in ("sex", "sexuality", "sexual content") for w in words),
+        "violence_flag": any(v in w for w in words for v in VIOLENCE_WORDS),
+        "source": "tmdb",
+    }
+
+
+def norm(s):
+    return re.sub(r"[^a-z0-9]", "", (s or "").lower().replace("&", "and"))
+
+
+def kids_in_mind(film):
+    """Cerca il film su kids-in-mind.com: {sex, violence, language, url} o None. Cache su disco."""
+    file = os.path.join(ROOT, "cache", "kim", f'{film["id"]}.json')
+    if os.path.exists(file):
+        with open(file, encoding="utf-8") as f:
+            return json.load(f)
+    q = urllib.parse.urlencode({"fwp_keyword": film["title"]})
+    req = urllib.request.Request(f"https://kids-in-mind.com/search-desktop.htm?{q}",
+                                 headers={"User-Agent": "film-salvati/0.1 (personal catalogue; alemarti.2001@gmail.com)"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        html = r.read().decode("utf-8", "replace")
+    time.sleep(1)  # ponytail: una richiesta al secondo, ~8 minuti per 450 titoli; poi tutto da cache
+    found = None
+    for url, text in re.findall(r'href="(https://kids-in-mind\.com/[a-z0-9]/[^"]+)"[^>]*>([^<]+)</a>', html):
+        m = re.match(r"(.+?) \[(\d{4})\].*? - (\d+)\.(\d+)\.(\d+)\s*$", text.replace("&#039;", "'").replace("&amp;", "&"))
+        if m and abs(int(m[2]) - (film["year"] or 0)) <= 1 and norm(m[1]) in (norm(film["title"]), norm(film["original_title"])):
+            found = {"sex": int(m[3]), "violence": int(m[4]), "language": int(m[5]), "url": url}
+            break
+    os.makedirs(os.path.dirname(file), exist_ok=True)
+    with open(file, "w", encoding="utf-8") as f:
+        json.dump(found, f)
+    return found
+
+
+def add_content(lib):
+    n = 0
+    for film in lib.values():
+        if film["type"] != "movie":
+            continue
+        try:
+            kim = kids_in_mind(film)
+        except OSError as e:  # sito giù o lento: resta il ripiego TMDB, si riprova al prossimo giro
+            print("  kids-in-mind:", film["title"], e)
+            continue
+        if kim:
+            n += 1
+            film["content"] = {**kim, "source": "kim",
+                               "sex_flag": kim["sex"] >= KIM_THRESHOLD, "violence_flag": kim["violence"] >= KIM_THRESHOLD}
+    print(f"Kids-in-Mind: {n} film trovati")
+
+
+# --- Premi e Wikipedia (Wikidata) ---
+MAJOR_AWARDS = [("Academy Award", "Oscar"), ("Palme d'Or", "Palme d'Or"), ("Golden Lion", "Golden Lion"),
+                ("Golden Bear", "Golden Bear"), ("Golden Globe", "Golden Globe"), ("BAFTA", "BAFTA"),
+                ("British Academy", "BAFTA"), ("César Award", "César"), ("David di Donatello", "David di Donatello"),
+                ("Primetime Emmy", "Emmy")]
+
+
+def add_awards(lib):
+    by_q = {f["wikidata_id"]: f for f in lib.values() if f.get("wikidata_id")}
+    qids = sorted(by_q)
+    for i in range(0, len(qids), 80):
+        values = " ".join("wd:" + q for q in qids[i:i + 80])
+        query = f"""SELECT ?item ?awardLabel ?enwiki WHERE {{
+          VALUES ?item {{ {values} }}
+          OPTIONAL {{ ?item wdt:P166 ?award. }}
+          OPTIONAL {{ ?enwiki schema:about ?item; schema:isPartOf <https://en.wikipedia.org/>. }}
+          SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }} }}"""
+        url = "https://query.wikidata.org/sparql?" + urllib.parse.urlencode({"query": query})
+        req = urllib.request.Request(url, headers={"Accept": "application/sparql-results+json",
+                                                   "User-Agent": "film-salvati/0.1 (alemarti.2001@gmail.com)"})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            rows = json.load(r)["results"]["bindings"]
+        for row in rows:
+            film = by_q[row["item"]["value"].rsplit("/", 1)[-1]]
+            if "enwiki" in row:
+                film["links"]["wikipedia"] = row["enwiki"]["value"]
+            label = row.get("awardLabel", {}).get("value")
+            if label and label not in film.setdefault("awards", []):
+                film["awards"].append(label)
+    for film in lib.values():
+        film["awards"] = sorted(film.get("awards", []))
+        major = [short for a in film["awards"] for key, short in MAJOR_AWARDS if key in a]
+        film["major_awards"] = {s: major.count(s) for s in dict.fromkeys(major)}  # es. {"Oscar": 3}
+    print(f"Wikidata: {sum(1 for f in lib.values() if f['major_awards'])} titoli con premi importanti")
+
+
 def details(kind, tid, refresh):
     extra = "credits,videos,release_dates,external_ids,keywords,watch/providers,recommendations"
     if kind == "tv":
@@ -111,6 +210,9 @@ def details(kind, tid, refresh):
     date = d.get("release_date") or d.get("first_air_date") or ""
     ext = d.get("external_ids", {})
     keywords = d.get("keywords", {})
+    all_keywords = [k["name"] for k in keywords.get("keywords", keywords.get("results", []))]
+    descriptors = [s for r in d.get("release_dates", {}).get("results", []) for x in r["release_dates"]
+                   for s in x.get("descriptors") or []]
     return {
         "id": f"{kind}-{tid}",
         "tmdb_id": tid,
@@ -132,7 +234,8 @@ def details(kind, tid, refresh):
         "trailer": trailer(d.get("videos", {}).get("results", [])),
         "certification": {c: certification(d, kind, c) for c in COUNTRIES},
         "providers": providers(d),
-        "keywords": [k["name"] for k in keywords.get("keywords", keywords.get("results", []))][:12],
+        "keywords": all_keywords[:12],
+        "content": tmdb_content(all_keywords, descriptors),
         "similar": [r.get("title") or r.get("name") for r in d.get("recommendations", {}).get("results", [])[:6]],
         "collection": (d.get("belongs_to_collection") or {}).get("name"),
         "ratings": {"tmdb": round(d["vote_average"], 1) if d.get("vote_count") else None},
@@ -178,6 +281,8 @@ def main():
         if item.get("letterboxd"):
             film["links"]["letterboxd"] = item["letterboxd"]
 
+    add_awards(lib)
+    add_content(lib)
     out = sorted(lib.values(), key=lambda t: (t["title"] or "").lower())
     with open(os.path.join(ROOT, "data", "library.json"), "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)

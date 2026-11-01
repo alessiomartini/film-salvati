@@ -96,6 +96,13 @@ a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   border: 1px solid var(--line); border-radius: 8px; padding: 4px 10px; background: var(--card); color: var(--text);
 }
 .save-info { color: var(--muted); font-size: 13px; }
+.flags { position: absolute; top: 6px; left: 6px; z-index: 1; display: flex; gap: 3px; flex-wrap: wrap; }
+.flag {
+  background: rgb(0 0 0 / 0.72); color: #fff; font-size: 12px; font-weight: 700; line-height: 1.3;
+  padding: 1px 5px; border-radius: 4px;
+}
+.flag.award { background: #ca8a04; }
+.sheet details summary { cursor: pointer; color: var(--muted); font-size: 13px; }
 .badge.check { left: auto; right: 6px; background: #b45309; }
 
 .sheet {
