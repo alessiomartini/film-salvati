@@ -1,38 +1,38 @@
 <!doctype html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Film salvati</title>
-  <meta name="description" content="La libreria di film e serie di Alessio: visti, da vedere, dove trovarli.">
-  <link rel="stylesheet" href="style.css?v=2">
+  <title>Saved Films</title>
+  <meta name="description" content="Alessio's library of films and series: watched, to watch, and where to stream them.">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
   <header class="top">
-    <h1>Film salvati</h1>
+    <h1>Saved Films</h1>
     <p class="count" id="count"></p>
   </header>
 
   <form class="filters" id="filters" onsubmit="return false">
-    <input type="search" name="q" placeholder="Cerca titolo, attore, regista…" aria-label="Cerca">
-    <select name="status" aria-label="Stato"><option value="">Tutti gli stati</option></select>
-    <select name="type" aria-label="Tipo">
-      <option value="">Film e serie</option><option value="movie">Film</option><option value="tv">Serie</option>
+    <input type="search" name="q" placeholder="Search title, actor, director…" aria-label="Search">
+    <select name="status" aria-label="Status"><option value="">Any status</option></select>
+    <select name="type" aria-label="Type">
+      <option value="">Films and series</option><option value="movie">Films</option><option value="tv">Series</option>
     </select>
-    <select name="genre" aria-label="Genere"><option value="">Tutti i generi</option></select>
-    <select name="country" aria-label="Paese per lo streaming">
-      <option value="NL">Streaming in Olanda</option><option value="IT">Streaming in Italia</option>
+    <select name="genre" aria-label="Genre"><option value="">All genres</option></select>
+    <select name="country" aria-label="Streaming country">
+      <option value="NL">Streaming in the Netherlands</option><option value="IT">Streaming in Italy</option>
     </select>
-    <select name="service" aria-label="Servizio"><option value="">Qualsiasi servizio</option></select>
-    <select name="runtime" aria-label="Durata">
-      <option value="">Qualsiasi durata</option><option value="90">Fino a 1h30</option>
-      <option value="120">Fino a 2h</option><option value="150">Fino a 2h30</option>
+    <select name="service" aria-label="Service"><option value="">Any service</option></select>
+    <select name="runtime" aria-label="Runtime">
+      <option value="">Any runtime</option><option value="90">Up to 1h30</option>
+      <option value="120">Up to 2h</option><option value="150">Up to 2h30</option>
     </select>
-    <select name="decade" aria-label="Decennio"><option value="">Tutti i decenni</option></select>
-    <select name="lang" aria-label="Lingua originale"><option value="">Tutte le lingue</option></select>
-    <select name="sort" aria-label="Ordina">
-      <option value="title">Ordina: titolo</option><option value="year">Ordina: più recenti</option>
-      <option value="rating">Ordina: voto</option><option value="saves">Ordina: più salvati</option>
+    <select name="decade" aria-label="Decade"><option value="">All decades</option></select>
+    <select name="lang" aria-label="Original language"><option value="">All languages</option></select>
+    <select name="sort" aria-label="Sort">
+      <option value="title">Sort: title</option><option value="year">Sort: newest</option>
+      <option value="rating">Sort: rating</option><option value="saves">Sort: most saved</option><option value="mine">Sort: my rating</option>
     </select>
   </form>
 
@@ -41,12 +41,12 @@
   <dialog class="sheet" id="sheet"><div id="sheet-body"></div></dialog>
 
   <footer class="foot">
-    Dati di film e serie da <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDB</a>,
-    disponibilità streaming da <a href="https://www.justwatch.com/" target="_blank" rel="noopener">JustWatch</a>.
-    Questo sito usa le API di TMDB ma non è approvato né certificato da TMDB.
+    Film and series data from <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDB</a>,
+    streaming availability from <a href="https://www.justwatch.com/" target="_blank" rel="noopener">JustWatch</a>.
+    This product uses the TMDB API but is not endorsed or certified by TMDB.
   </footer>
 
-  <script src="app.js?v=2"></script>
-  <script src="js/notes-widget.js?v=1"></script>
+  <script src="app.js?v=4"></script>
+  <script src="js/notes-widget.js?v=2"></script>
 </body>
 </html>

@@ -17,6 +17,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, "cache", "tmdb")
 COUNTRIES = ("NL", "IT")
 IMG = "https://image.tmdb.org/t/p/"
+STATUS_RANK = {"to watch": 0, "maybe watched": 1, "watched": 2}  # come in import_sources.py
 
 
 def load_env():
@@ -57,16 +58,16 @@ def find(item):
     year_key = "primary_release_year" if kind == "movie" else "first_air_date_year"
     tries = [{year_key: item["year"]}] if item.get("year") else []
     for extra in tries + [{}]:
-        res = tmdb(f"/search/{kind}", query=item["title"], language="it-IT", **extra)["results"]
+        res = tmdb(f"/search/{kind}", query=item["title"], language="en-US", **extra)["results"]
         if res:
             return res[0]["id"]
     return None
 
 
 def trailer(videos):
-    """Trailer YouTube: italiano se c'è, altrimenti inglese/qualsiasi."""
+    """Trailer YouTube: inglese se c'è, altrimenti qualsiasi."""
     vids = [v for v in videos if v["site"] == "YouTube" and v["type"] in ("Trailer", "Teaser")]
-    vids.sort(key=lambda v: (v["iso_639_1"] != "it", v["type"] != "Trailer", not v.get("official")))
+    vids.sort(key=lambda v: (v["iso_639_1"] != "en", v["type"] != "Trailer", not v.get("official")))
     return f"https://www.youtube.com/watch?v={vids[0]['key']}" if vids else None
 
 
@@ -100,10 +101,8 @@ def details(kind, tid, refresh):
     extra = "credits,videos,release_dates,external_ids,keywords,watch/providers,recommendations"
     if kind == "tv":
         extra = "aggregate_credits,videos,content_ratings,external_ids,keywords,watch/providers,recommendations"
-    d = tmdb(f"/{kind}/{tid}", refresh, language="it-IT", append_to_response=extra,
-             include_video_language="it,en,null")
-    if not d.get("overview"):
-        d["overview"] = tmdb(f"/{kind}/{tid}", refresh, language="en-US").get("overview", "")
+    d = tmdb(f"/{kind}/{tid}", refresh, language="en-US", append_to_response=extra,
+             include_video_language="en,null")
     credits = d.get("credits") or d.get("aggregate_credits") or {}
     if kind == "movie":
         makers = [c["name"] for c in credits.get("crew", []) if c["job"] == "Director"]
@@ -165,16 +164,19 @@ def main():
         if not tid:
             not_found.append(item)
             continue
-        film = details(item["type"], tid, refresh)
-        prev = lib.get(film["id"])
-        if prev:  # due voci della lista sullo stesso titolo TMDB: unisci i post
-            prev["instagram"] += [u for u in item.get("instagram", []) if u not in prev["instagram"]]
-            continue
-        film.update(status=item["status"], instagram=item.get("instagram", []),
-                    query={"title": item["title"], "year": item.get("year")})
-        if item.get("check"):
-            film["check"] = True
-        lib[film["id"]] = film
+        film = lib.get(f'{item["type"]}-{tid}') or details(item["type"], tid, refresh)
+        if film["id"] not in lib:
+            film.update(status=item["status"], instagram=[], query={"title": item["title"], "year": item.get("year")})
+            lib[film["id"]] = film
+        # più voci della lista sullo stesso titolo TMDB (fonti diverse): unisci post, stato e dati miei
+        film["instagram"] += [u for u in item.get("instagram", []) if u not in film["instagram"]]
+        if STATUS_RANK[item["status"]] > STATUS_RANK[film["status"]]:
+            film["status"] = item["status"]
+        for k in ("my_rating", "liked", "check"):
+            if item.get(k):
+                film[k] = item[k]
+        if item.get("letterboxd"):
+            film["links"]["letterboxd"] = item["letterboxd"]
 
     out = sorted(lib.values(), key=lambda t: (t["title"] or "").lower())
     with open(os.path.join(ROOT, "data", "library.json"), "w", encoding="utf-8") as f:

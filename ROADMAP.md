@@ -22,6 +22,7 @@ Unico file per il futuro e il passato del progetto, letto da Projects Overview
 - [x] Titoli riconosciuti dalle caption in `data/matches.json`
 - [x] Sito: griglia, filtri, scheda per titolo, Feedback
 - [x] Chiave TMDB in `.env` e primo `enrich.py` (copertine, trama, cast, trailer, streaming NL/IT)
+- [ ] Alessio corregge gli stati "maybe watched" (le liste Keep sono un misto di visti e da vedere)
 - [ ] Alessio controlla i titoli dubbi (badge "?") e i 6 post non riconosciuti
 
 ## Arricchimento completo
@@ -31,13 +32,15 @@ Unico file per il futuro e il passato del progetto, letto da Projects Overview
 - [ ] Voto Letterboxd
 
 ## Import personali
-- [ ] Google Keep: liste "Films" (visti per anno, dal 2017)
+- [x] Google Keep: liste "Films" (2014-2017 + "Films Online 1" + 4 recensioni), stato "maybe watched"
 - [ ] Watchlist di Google (Google Play Movies & TV, nel Takeout del 2026-10-18)
-- [ ] Letterboxd (Settings → Data → Export)
+- [x] Letterboxd (Settings → Data → Export): visti, voti, watchlist, like
 - [ ] IMDb (voti e watchlist, Export CSV)
 - [ ] Netflix (netflix.com/viewingactivity → scarica tutto; episodi raggruppati in serie)
-- [ ] Prime Video (richiesta dati Amazon) e RaiPlay (a mano)
-- [ ] Fusione delle fonti: stato "visto" vince su "da vedere", mio voto, data di visione
+- [x] Prime Video (richiesta dati Amazon, `amazon/All Data Categories.zip`): cronologia e watchlist
+- [ ] RaiPlay (a mano)
+- [x] Fusione delle fonti: stato "watched" vince su "to watch", mio voto e like da Letterboxd
+- [ ] Data di visione
 
 ## Personalizzazione
 - [ ] I miei abbonamenti evidenziati e filtro "solo i miei servizi"
@@ -71,8 +74,20 @@ tag di provenienza (scelta di Alessio, 2026-11-01). Le caption non vengono pubbl
 solo il link al post. Il riconoscimento dei titoli l'ha fatto Claude leggendo le caption: 14 post
 non sono film (musica, motivazionali, pubblicità), 6 non si capiscono dalla caption (serve il video).
 
+Lingua (Alessio, 2026-11-01): sito in inglese; titoli in lingua originale con la traduzione inglese
+sotto; trama, generi e trailer da TMDB in inglese. Stati nei dati: `to watch`, `maybe watched`, `watched`.
+
+Keep: le righe sono scritte a mano (titoli troncati con "...", refusi): le correzioni stanno in
+`data/matches.json` con chiave `keep:<riga>`; senza correzione la riga è cercata così com'è.
+
+Prime Video: la cronologia ha solo i minuti visti, non la durata. Soglie fisse: film >= 45 min o
+serie >= 80 min = watched, 3-45 min = maybe watched, sotto = anteprima scartata. Gli episodi
+("Pilot-Bosch - Season 1") sono raggruppati per serie; i falsi positivi ("Half-Blood Prince") si
+correggono in `data/matches.json` con chiave `tv:<nome>`. Altri dati in Dati-personali guardati e
+non usati: estratti conto (un solo pagamento al cinema), YouTube (video, non film).
+
 Repo reso pubblico il 2026-11-01 (con l'account free GitHub Pages richiede un repo pubblico).
 Pages servito direttamente dal branch main, senza workflow: non c'è build.
 
 ## Log
-- 2026-11-01: arricchimento TMDB dei 145 titoli (copertine, trama, cast, trailer, streaming NL/IT), Feedback attivo; progetto avviato: import Instagram (145 titoli), script TMDB, sito con griglia, filtri e schede; repo pubblico e sito online su GitHub Pages.
+- 2026-11-01: import di Keep, Letterboxd e Prime Video (445 titoli), sito in inglese con titoli originali + inglese; arricchimento TMDB dei 145 titoli (copertine, trama, cast, trailer, streaming NL/IT), Feedback attivo; progetto avviato: import Instagram (145 titoli), script TMDB, sito con griglia, filtri e schede; repo pubblico e sito online su GitHub Pages.

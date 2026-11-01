@@ -1,4 +1,4 @@
-// Film salvati: griglia + filtri + scheda (#/t/<id>). Dati: data/library.json (scripts/enrich.py);
+// Saved Films: griglia + filtri + scheda (#/t/<id>). Testi del sito in inglese; titoli in lingua originale + inglese. Dati: data/library.json (scripts/enrich.py);
 // finché non esiste, data/my-list.json (solo titoli, senza copertine).
 'use strict';
 
@@ -6,8 +6,12 @@ const $ = (s) => document.querySelector(s);
 const form = $('#filters');
 const grid = $('#grid');
 const sheet = $('#sheet');
-const LANGS = new Intl.DisplayNames(['it'], { type: 'language' });
-const KINDS = { flatrate: 'Abbonamento', free: 'Gratis', ads: 'Gratis con pub', rent: 'Noleggio', buy: 'Acquisto' };
+const LANGS = new Intl.DisplayNames(['en'], { type: 'language' });
+const KINDS = { flatrate: 'Subscription', free: 'Free', ads: 'Free with ads', rent: 'Rent', buy: 'Buy' };
+const COUNTRY = { NL: 'Netherlands', IT: 'Italy' };
+// Titolo in lingua originale; quello inglese sotto, se diverso.
+const name = (t) => t.original_title || t.title || '';
+const english = (t) => (t.original_title && t.title !== t.original_title ? t.title : '');
 let all = [];
 
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
@@ -50,26 +54,28 @@ function filtered() {
     (!f.decade || (t.year && Math.floor(t.year / 10) * 10 === +f.decade)) &&
     (!f.lang || t.original_language === f.lang));
   const by = {
-    title: (a, b) => (a.title || '').localeCompare(b.title || ''),
+    title: (a, b) => name(a).localeCompare(name(b)),
     year: (a, b) => (b.year || 0) - (a.year || 0),
     rating: (a, b) => (b.ratings.tmdb || 0) - (a.ratings.tmdb || 0),
     saves: (a, b) => (b.instagram?.length || 0) - (a.instagram?.length || 0),
+    mine: (a, b) => (b.my_rating || 0) - (a.my_rating || 0) || (b.liked ? 1 : 0) - (a.liked ? 1 : 0),
   };
   return list.sort(by[f.sort]);
 }
 
 function render() {
   const list = filtered();
-  $('#count').textContent = `${list.length} di ${all.length} titoli`;
+  $('#count').textContent = `${list.length} of ${all.length} titles`;
   grid.innerHTML = list.map((t) => `
     <button class="card" type="button" data-id="${esc(t.id)}">
       <div class="poster">
-        ${t.type === 'tv' ? '<span class="badge">Serie</span>' : ''}
-        ${t.check ? '<span class="badge check" title="Titolo riconosciuto dal post con un dubbio">?</span>' : ''}
-        ${t.poster ? `<img src="${esc(t.poster)}" alt="" loading="lazy">` : esc(t.title)}
+        ${t.type === 'tv' ? '<span class="badge">Series</span>' : ''}
+        ${t.check ? '<span class="badge check" title="Title guessed from the saved post, to be confirmed">?</span>' : ''}
+        ${t.poster ? `<img src="${esc(t.poster)}" alt="" loading="lazy">` : esc(name(t))}
       </div>
-      <div class="name">${esc(t.title)}</div>
-      <div class="meta">${[t.year, hours(t.runtime), t.ratings.tmdb && `★ ${t.ratings.tmdb}`].filter(Boolean).join(' · ')}</div>
+      <div class="name">${esc(name(t))}</div>
+      ${english(t) ? `<div class="en">${esc(english(t))}</div>` : ''}
+      <div class="meta">${[t.year, hours(t.runtime), t.ratings.tmdb && `★ ${t.ratings.tmdb}`, t.my_rating && `me ${t.my_rating}/5`, t.liked && '♥'].filter(Boolean).join(' · ')}</div>
     </button>`).join('');
 }
 
@@ -80,20 +86,20 @@ function chips(items) {
 function providersHtml(t) {
   const out = ['NL', 'IT'].map((c) => {
     const p = t.providers[c];
-    if (!p) return `<p class="muted">${c === 'NL' ? 'Olanda' : 'Italia'}: non disponibile in streaming.</p>`;
+    if (!p) return `<p class="muted">${COUNTRY[c]}: not available to stream.</p>`;
     const rows = Object.entries(KINDS).filter(([k]) => p[k]).map(([k, label]) => `
       <div class="prov"><span class="kind">${label}</span>
         ${p[k].map((x) => `<img src="${esc(x.logo)}" alt="${esc(x.name)}" title="${esc(x.name)}" loading="lazy">`).join('')}
       </div>`).join('');
-    return `<p><strong>${c === 'NL' ? 'Olanda' : 'Italia'}</strong>${p.link ? ` · <a href="${esc(p.link)}" target="_blank" rel="noopener">dove guardarlo</a>` : ''}</p>${rows}`;
+    return `<p><strong>${COUNTRY[c]}</strong>${p.link ? ` · <a href="${esc(p.link)}" target="_blank" rel="noopener">where to watch</a>` : ''}</p>${rows}`;
   });
   return out.join('');
 }
 
 function openSheet(t) {
   const facts = [
-    t.year, t.type === 'tv' ? (t.seasons && `${t.seasons} stagioni`) : hours(t.runtime),
-    t.original_language && `lingua originale: ${lang(t.original_language)}`,
+    t.year, t.type === 'tv' ? (t.seasons && `${t.seasons} season${t.seasons > 1 ? 's' : ''}`) : hours(t.runtime),
+    t.original_language && `original language: ${lang(t.original_language)}`,
     ...Object.entries(t.certification || {}).filter(([, v]) => v).map(([c, v]) => `${c} ${v}`),
   ].filter(Boolean).join(' · ');
   const links = [
@@ -102,29 +108,30 @@ function openSheet(t) {
   const ratings = Object.entries(t.ratings).filter(([, v]) => v).map(([k, v]) => `${k.toUpperCase()} ${v}`);
 
   $('#sheet-body').innerHTML = `
-    <button class="close" type="button" aria-label="Chiudi">×</button>
+    <button class="close" type="button" aria-label="Close">×</button>
     <div class="sheet-head">
-      <div class="poster">${t.poster ? `<img src="${esc(t.poster)}" alt="Copertina di ${esc(t.title)}">` : esc(t.title)}</div>
+      <div class="poster">${t.poster ? `<img src="${esc(t.poster)}" alt="Poster of ${esc(name(t))}">` : esc(name(t))}</div>
       <div>
-        <h2>${esc(t.title)}</h2>
-        ${t.original_title && t.original_title !== t.title ? `<p class="orig">${esc(t.original_title)}</p>` : ''}
+        <h2>${esc(name(t))}</h2>
+        ${english(t) ? `<p class="orig">${esc(english(t))}</p>` : ''}
         <p class="muted">${esc(facts)}</p>
         ${chips(t.genres)}
-        ${t.directors.length ? `<p><strong>${t.type === 'tv' ? 'Ideata da' : 'Regia'}:</strong> ${esc(t.directors.join(', '))}</p>` : ''}
-        ${ratings.length ? `<p><strong>Voti:</strong> ${esc(ratings.join(' · '))}</p>` : ''}
+        ${t.directors.length ? `<p><strong>${t.type === 'tv' ? 'Created by' : 'Director'}:</strong> ${esc(t.directors.join(', '))}</p>` : ''}
+        ${ratings.length ? `<p><strong>Ratings:</strong> ${esc(ratings.join(' · '))}</p>` : ''}
+        ${t.my_rating || t.liked ? `<p><strong>Me:</strong> ${esc([t.my_rating && `${t.my_rating}/5`, t.liked && '♥ liked'].filter(Boolean).join(' · '))}</p>` : ''}
         ${t.trailer ? `<a class="btn" href="${esc(t.trailer)}" target="_blank" rel="noopener">▶ Trailer</a>` : ''}
-        ${t.check ? '<p class="muted">Titolo riconosciuto dal post con un dubbio: da confermare.</p>' : ''}
+        ${t.check ? '<p class="muted">Title guessed from the saved post: to be confirmed.</p>' : ''}
       </div>
     </div>
-    ${t.overview ? `<section><h3>Trama</h3><p>${esc(t.overview)}</p></section>` : ''}
-    ${t.cast.length ? `<section><h3>Attori</h3>${chips(t.cast)}</section>` : ''}
-    ${t.tmdb_id ? `<section><h3>Dove vederlo</h3>${providersHtml(t)}</section>` : ''}
-    ${links ? `<section><h3>Schede</h3><p>${links}</p></section>` : ''}
-    ${t.instagram?.length ? `<section><h3>Post Instagram salvati</h3><p>${t.instagram.map((u, i) =>
+    ${t.overview ? `<section><h3>Plot</h3><p>${esc(t.overview)}</p></section>` : ''}
+    ${t.cast.length ? `<section><h3>Cast</h3>${chips(t.cast)}</section>` : ''}
+    ${t.tmdb_id ? `<section><h3>Where to watch</h3>${providersHtml(t)}</section>` : ''}
+    ${links ? `<section><h3>Pages</h3><p>${links}</p></section>` : ''}
+    ${t.instagram?.length ? `<section><h3>Saved Instagram posts</h3><p>${t.instagram.map((u, i) =>
       `<a href="${esc(u)}" target="_blank" rel="noopener">Post ${i + 1}</a>`).join(' · ')}</p></section>` : ''}
-    ${t.collection ? `<section><h3>Saga</h3><p>${esc(t.collection)}</p></section>` : ''}
-    ${t.similar?.length ? `<section><h3>Simili</h3>${chips(t.similar)}</section>` : ''}
-    ${t.keywords?.length ? `<section><h3>Temi</h3>${chips(t.keywords)}</section>` : ''}`;
+    ${t.collection ? `<section><h3>Collection</h3><p>${esc(t.collection)}</p></section>` : ''}
+    ${t.similar?.length ? `<section><h3>Similar</h3>${chips(t.similar)}</section>` : ''}
+    ${t.keywords?.length ? `<section><h3>Keywords</h3>${chips(t.keywords)}</section>` : ''}`;
   $('#sheet-body .close').onclick = () => sheet.close();
   if (!sheet.open) sheet.showModal();
   sheet.scrollTop = 0;
@@ -141,7 +148,7 @@ function route() {
 window.feedbackContext = () => {
   const f = Object.fromEntries([...new FormData(form)].filter(([, v]) => v));
   const id = location.hash.match(/^#\/t\/(.+)/)?.[1];
-  return { filters: f, title: id && all.find((x) => x.id === decodeURIComponent(id))?.title };
+  return { filters: f, title: id && name(all.find((x) => x.id === decodeURIComponent(id)) || {}) };
 };
 
 grid.addEventListener('click', (e) => {
@@ -160,10 +167,10 @@ window.addEventListener('hashchange', route);
 
 load().then((data) => {
   all = data;
-  fillSelect('status', all.map((t) => t.status));
+  fillSelect('status', all.map((t) => t.status), (s) => s[0].toUpperCase() + s.slice(1));
   fillSelect('genre', all.flatMap((t) => t.genres));
   fillSelect('service', all.flatMap((t) => services(t, form.elements.country.value)));
-  fillSelect('decade', all.map((t) => t.year && Math.floor(t.year / 10) * 10), (d) => `Anni ${d}`);
+  fillSelect('decade', all.map((t) => t.year && Math.floor(t.year / 10) * 10), (d) => `${d}s`);
   fillSelect('lang', all.map((t) => t.original_language), lang);
   render();
   route();
