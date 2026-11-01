@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "film-salvati", "runtimeExecutable": "python", "runtimeArgs": ["-m", "http.server", "8765", "--directory", "E:/Alessio/Projects_Git/film-salvati"], "port": 8765 }
+  ]
+}
