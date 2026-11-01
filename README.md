@@ -36,6 +36,12 @@ python -m http.server 8765
 
 e apri http://localhost:8765. Senza `library.json` il sito mostra solo i titoli di `my-list.json`.
 
+## Cambiare lo stato di un titolo
+
+Sul sito, pulsante **Edit** e poi il token GitHub (fine-grained, solo repo `film-salvati`,
+permesso Contents: read and write). Compaiono i pulsanti To watch / Maybe / Watched su ogni titolo;
+le scelte vanno in `data/overrides.json`, che vince sugli stati degli script.
+
 ## Privacy
 
 Gli export grezzi restano in `E:\Alessio\Dati-personali` e non entrano mai nel repo: qui vanno

@@ -14,6 +14,19 @@ const name = (t) => t.original_title || t.title || '';
 const english = (t) => (t.original_title && t.title !== t.original_title ? t.title : '');
 let all = [];
 
+// Stato modificabile da Alessio: data/overrides.json ({id: stato}) nel repo, scritto con l'API GitHub
+// e un token fine-grained (solo Contents di questo repo) salvato nel suo browser. Nessun backend:
+// chi non ha il token vede gli stati ma non i pulsanti. Le modifiche non ancora salvate restano nel browser.
+const REPO_API = 'https://api.github.com/repos/alessiomartini/film-salvati/contents/data/overrides.json';
+const STATUSES = [['to watch', 'To watch'], ['maybe watched', 'Maybe'], ['watched', 'Watched']];
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch { /* storage off */ } },
+};
+let token = store.get('film-salvati.token');
+let pending = JSON.parse(store.get('film-salvati.pending') || '{}');
+let saveTimer;
+
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 const lang = (code) => { try { return LANGS.of(code); } catch { return code; } };
 const hours = (m) => (m ? (m >= 60 ? `${Math.floor(m / 60)}h${String(m % 60).padStart(2, '0')}` : `${m} min`) : '');
@@ -23,7 +36,13 @@ async function load() {
     const r = await fetch(file + '?v=1', { cache: 'no-cache' });
     if (r.ok) {
       const data = await r.json();
-      return data.map((t, i) => ({ id: t.id || `t${i}`, genres: [], cast: [], directors: [], providers: {}, links: {}, ratings: {}, ...t }));
+      const ov = await fetch('data/overrides.json', { cache: 'no-cache' }).then((x) => (x.ok ? x.json() : {})).catch(() => ({}));
+      Object.assign(ov, pending);
+      return data.map((t, i) => {
+        const x = { id: t.id || `t${i}`, genres: [], cast: [], directors: [], providers: {}, links: {}, ratings: {}, ...t };
+        if (ov[x.id]) x.status = ov[x.id];
+        return x;
+      });
     }
   }
   return [];
@@ -63,12 +82,70 @@ function filtered() {
   return list.sort(by[f.sort]);
 }
 
+function setStatus(id, status) {
+  const t = all.find((x) => x.id === id);
+  if (!t || t.status === status) return;
+  t.status = status;
+  pending[id] = status;
+  store.set('film-salvati.pending', JSON.stringify(pending));
+  saveInfo(`${Object.keys(pending).length} unsaved…`);
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(flush, 2500); // un solo commit per una raffica di clic
+  render();
+  if (sheet.open) openSheet(t);
+}
+
+function saveInfo(text) { $('#save-info').textContent = text; }
+
+const b64 = (s) => btoa(String.fromCharCode(...new TextEncoder().encode(s)));
+const unb64 = (s) => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\n/g, '')), (c) => c.charCodeAt(0)));
+
+async function flush() {
+  const batch = { ...pending };
+  const n = Object.keys(batch).length;
+  if (!n || !token) return;
+  const headers = { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' };
+  saveInfo('Saving…');
+  try {
+    const cur = await fetch(REPO_API + '?ref=main', { headers, cache: 'no-store' });
+    if (!cur.ok) throw new Error(`GitHub ${cur.status}`);
+    const file = await cur.json();
+    const data = { ...JSON.parse(unb64(file.content)), ...batch };
+    const sorted = Object.fromEntries(Object.keys(data).sort().map((k) => [k, data[k]]));
+    const put = await fetch(REPO_API, {
+      method: 'PUT', headers,
+      body: JSON.stringify({ message: `Stato di ${n} titoli dal sito`, content: b64(JSON.stringify(sorted, null, 1) + '\n'), sha: file.sha, branch: 'main' }),
+    });
+    if (!put.ok) throw new Error(`GitHub ${put.status}`);
+    for (const k in batch) if (pending[k] === batch[k]) delete pending[k];
+    store.set('film-salvati.pending', JSON.stringify(pending));
+    const left = Object.keys(pending).length;
+    saveInfo(left ? `${left} unsaved…` : 'Saved');
+    if (left) saveTimer = setTimeout(flush, 2500);
+  } catch (err) {
+    // mai perdere un clic: restano nel browser e si riprova al prossimo cambio o ricaricamento
+    saveInfo(`Not saved (${err.message}), kept in this browser`);
+  }
+}
+
+function statusButtons(t) {
+  return `<div class="status-row">${STATUSES.map(([s, label]) =>
+    `<button type="button" data-set="${s}" data-id="${esc(t.id)}" class="${t.status === s ? 'on' : ''}">${label}</button>`).join('')}</div>`;
+}
+
+const STATUS_BADGE = {
+  watched: '<span class="status s-watched">✓ Watched</span>',
+  'maybe watched': '<span class="status s-maybe">Maybe watched</span>',
+};
+
 function render() {
   const list = filtered();
   $('#count').textContent = `${list.length} of ${all.length} titles`;
   grid.innerHTML = list.map((t) => `
+    <div class="cell ${t.status === 'watched' ? 'is-watched' : ''}">
     <button class="card" type="button" data-id="${esc(t.id)}">
       <div class="poster">
+        ${STATUS_BADGE[t.status] || ''}
         ${t.type === 'tv' ? '<span class="badge">Series</span>' : ''}
         ${t.check ? '<span class="badge check" title="Title guessed from the saved post, to be confirmed">?</span>' : ''}
         ${t.poster ? `<img src="${esc(t.poster)}" alt="" loading="lazy">` : esc(name(t))}
@@ -76,7 +153,9 @@ function render() {
       <div class="name">${esc(name(t))}</div>
       ${english(t) ? `<div class="en">${esc(english(t))}</div>` : ''}
       <div class="meta">${[t.year, hours(t.runtime), t.ratings.tmdb && `★ ${t.ratings.tmdb}`, t.my_rating && `me ${t.my_rating}/5`, t.liked && '♥'].filter(Boolean).join(' · ')}</div>
-    </button>`).join('');
+    </button>
+    ${token ? statusButtons(t) : ''}
+    </div>`).join('');
 }
 
 function chips(items) {
@@ -120,6 +199,8 @@ function openSheet(t) {
         ${ratings.length ? `<p><strong>Ratings:</strong> ${esc(ratings.join(' · '))}</p>` : ''}
         ${t.my_rating || t.liked ? `<p><strong>Me:</strong> ${esc([t.my_rating && `${t.my_rating}/5`, t.liked && '♥ liked'].filter(Boolean).join(' · '))}</p>` : ''}
         ${t.trailer ? `<a class="btn" href="${esc(t.trailer)}" target="_blank" rel="noopener">▶ Trailer</a>` : ''}
+        <p><strong>Status:</strong> ${esc(t.status[0].toUpperCase() + t.status.slice(1))}</p>
+        ${token ? statusButtons(t) : ''}
         ${t.check ? '<p class="muted">Title guessed from the saved post: to be confirmed.</p>' : ''}
       </div>
     </div>
@@ -151,6 +232,23 @@ window.feedbackContext = () => {
   return { filters: f, title: id && name(all.find((x) => x.id === decodeURIComponent(id)) || {}) };
 };
 
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-set]');
+  if (b) setStatus(b.dataset.id, b.dataset.set);
+});
+$('#edit').addEventListener('click', () => {
+  if (token) {
+    if (!confirm('Stop editing on this browser? The GitHub token will be removed from it.')) return;
+    token = null;
+  } else {
+    token = (prompt('GitHub token (fine-grained, Contents read/write on film-salvati only):') || '').trim() || null;
+  }
+  store.set('film-salvati.token', token);
+  $('#edit').textContent = token ? 'Stop editing' : 'Edit';
+  render();
+  if (token) flush();
+});
+
 grid.addEventListener('click', (e) => {
   const card = e.target.closest('.card');
   if (card) location.hash = `#/t/${encodeURIComponent(card.dataset.id)}`;
@@ -172,6 +270,9 @@ load().then((data) => {
   fillSelect('service', all.flatMap((t) => services(t, form.elements.country.value)));
   fillSelect('decade', all.map((t) => t.year && Math.floor(t.year / 10) * 10), (d) => `${d}s`);
   fillSelect('lang', all.map((t) => t.original_language), lang);
+  $('#edit').textContent = token ? 'Stop editing' : 'Edit';
+  if (Object.keys(pending).length) saveInfo(`${Object.keys(pending).length} unsaved…`);
   render();
   route();
+  flush();
 });

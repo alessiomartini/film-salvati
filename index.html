@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Saved Films</title>
   <meta name="description" content="Alessio's library of films and series: watched, to watch, and where to stream them.">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
   <header class="top">
     <h1>Saved Films</h1>
     <p class="count" id="count"></p>
+    <span class="save-info" id="save-info" role="status"></span>
+    <button class="edit" id="edit" type="button">Edit</button>
   </header>
 
   <form class="filters" id="filters" onsubmit="return false">
@@ -46,7 +48,7 @@
     This product uses the TMDB API but is not endorsed or certified by TMDB.
   </footer>
 
-  <script src="app.js?v=4"></script>
+  <script src="app.js?v=5"></script>
   <script src="js/notes-widget.js?v=2"></script>
 </body>
 </html>
