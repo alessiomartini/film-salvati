@@ -15,13 +15,13 @@ Unico file per il futuro e il passato del progetto, letto da Projects Overview
 - [x] Scheda in projects-overview e link in home.html
 - [x] Rendere pubblico il repo e attivare GitHub Pages (dal branch main): https://alessiomartini.github.io/film-salvati/
 - [x] Aggiungere `film-salvati` a `SITES` in site-notes
-- [ ] `wrangler deploy` di site-notes (lo lancia Alessio), poi provare il Feedback dal sito
+- [x] `wrangler deploy` di site-notes (lo lancia Alessio), poi provare il Feedback dal sito
 
 ## Primo risultato: post Instagram
 - [x] Import delle 3 raccolte Instagram (189 post, 145 titoli)
 - [x] Titoli riconosciuti dalle caption in `data/matches.json`
 - [x] Sito: griglia, filtri, scheda per titolo, Feedback
-- [ ] Chiave TMDB in `.env` e primo `enrich.py` (copertine, trama, cast, trailer, streaming NL/IT)
+- [x] Chiave TMDB in `.env` e primo `enrich.py` (copertine, trama, cast, trailer, streaming NL/IT)
 - [ ] Alessio controlla i titoli dubbi (badge "?") e i 6 post non riconosciuti
 
 ## Arricchimento completo
@@ -62,6 +62,8 @@ Unico file per il futuro e il passato del progetto, letto da Projects Overview
 ## Decisioni e cose provate
 Fonti dati: TMDB (gratis, con attribuzione) per scheda, trailer e disponibilità streaming (dati
 JustWatch); OMDb per i voti IMDb/RT/Metacritic; Wikidata per Wikipedia, premi e ID degli altri siti.
+La ricerca TMDB per titolo+anno sbaglia a volte (anno di uscita diverso, omonimi): 4 casi fissati
+con `tmdb_id` esplicito in `data/matches.json` (Red, Enemy, Demolition, Tuner).
 Letterboxd non ha API pubblica: per ora solo il link (`letterboxd.com/tmdb/<id>` porta alla scheda).
 
 Instagram: le tre raccolte di film vengono importate tutte (nomi solo in `.env`), senza
@@ -73,4 +75,4 @@ Repo reso pubblico il 2026-11-01 (con l'account free GitHub Pages richiede un re
 Pages servito direttamente dal branch main, senza workflow: non c'è build.
 
 ## Log
-- 2026-11-01: progetto avviato: import Instagram (145 titoli), script TMDB, sito con griglia, filtri e schede; repo pubblico e sito online su GitHub Pages.
+- 2026-11-01: arricchimento TMDB dei 145 titoli (copertine, trama, cast, trailer, streaming NL/IT), Feedback attivo; progetto avviato: import Instagram (145 titoli), script TMDB, sito con griglia, filtri e schede; repo pubblico e sito online su GitHub Pages.
