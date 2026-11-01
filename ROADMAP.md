@@ -43,6 +43,8 @@ Unico file per il futuro e il passato del progetto, letto da Projects Overview
 - [ ] Data di visione
 
 ## Personalizzazione
+- [x] Stato visibile su ogni copertina (Watched verde, Maybe watched arancione)
+- [x] Cambiare lo stato dal sito (pulsante Edit, solo con il token di Alessio)
 - [ ] I miei abbonamenti evidenziati e filtro "solo i miei servizi"
 - [ ] Filtro "stasera": da vedere + durata + disponibile sui miei servizi
 - [ ] Statistiche: ore viste, generi, decenni, registi
@@ -51,7 +53,6 @@ Unico file per il futuro e il passato del progetto, letto da Projects Overview
 - [ ] GitHub Action settimanale: riaggiorna disponibilità streaming e voti (chiavi come secrets)
 
 ## Idee
-- [ ] Cambiare lo stato di un titolo dal sito (solo Alessio, backend su site-notes/Cloudflare) per correggere i "maybe watched"
 - [ ] Compositore della colonna sonora, con link a music-library
 - [ ] "Tratto da" (libro, storia vera, opera teatrale)
 - [ ] Location delle riprese
@@ -87,8 +88,15 @@ serie >= 80 min = watched, 3-45 min = maybe watched, sotto = anteprima scartata.
 correggono in `data/matches.json` con chiave `tv:<nome>`. Altri dati in Dati-personali guardati e
 non usati: estratti conto (un solo pagamento al cinema), YouTube (video, non film).
 
+Modifica dello stato dal sito: niente backend. Il sito scrive `data/overrides.json` ({id: stato})
+nel repo con l'API GitHub e un token fine-grained (solo Contents di film-salvati) che Alessio
+incolla una volta nel suo browser (pulsante Edit). I clic ravvicinati diventano un solo commit; se
+il salvataggio fallisce restano nel browser. `overrides.json` vince sugli stati calcolati dagli
+script. Scartato un Worker su site-notes: serviva login e deploy per una sola persona.
+
 Repo reso pubblico il 2026-11-01 (con l'account free GitHub Pages richiede un repo pubblico).
 Pages servito direttamente dal branch main, senza workflow: non c'è build.
 
 ## Log
+- 2026-11-01: stato visibile sulle copertine e modificabile dal sito (overrides.json via API GitHub).
 - 2026-11-01: import di Keep, Letterboxd e Prime Video (445 titoli), sito in inglese con titoli originali + inglese; arricchimento TMDB dei 145 titoli (copertine, trama, cast, trailer, streaming NL/IT), Feedback attivo; progetto avviato: import Instagram (145 titoli), script TMDB, sito con griglia, filtri e schede; repo pubblico e sito online su GitHub Pages.
