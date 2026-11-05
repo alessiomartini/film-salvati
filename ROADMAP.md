@@ -49,6 +49,7 @@ Unico file per il futuro e il passato del progetto, letto da Projects Overview
 - [ ] I miei abbonamenti evidenziati e filtro "solo i miei servizi"
 - [ ] Filtro "stasera": da vedere + durata + disponibile sui miei servizi
 - [ ] Statistiche: ore viste, generi, decenni, registi
+- [ ] Filtro: bottone per escludere i film già visti, mantenendo quelli "forse" e "non visti" (da Google Tasks, 2026-11-04)
 
 ## Aggiornamento automatico
 - [ ] GitHub Action settimanale: riaggiorna disponibilità streaming e voti (chiavi come secrets)
