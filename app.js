@@ -259,12 +259,12 @@ function route() {
   else if (sheet.open) sheet.close();
 }
 
-// Allegato automatico al Feedback (js/notes-widget.js).
-window.feedbackContext = () => {
+// Allegato automatico al Feedback (js/notes-widget.js, SiteNotes.setContext).
+window.SiteNotes.setContext(() => {
   const f = Object.fromEntries([...new FormData(form)].filter(([, v]) => v));
   const id = location.hash.match(/^#\/t\/(.+)/)?.[1];
   return { filters: f, title: id && name(all.find((x) => x.id === decodeURIComponent(id)) || {}) };
-};
+});
 
 document.addEventListener('click', (e) => {
   const b = e.target.closest('[data-set]');
