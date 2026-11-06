@@ -107,7 +107,7 @@ Repo reso pubblico il 2026-11-01 (con l'account free GitHub Pages richiede un re
 Pages servito direttamente dal branch main, senza workflow: non c'è build.
 
 ## Log
-- 2026-11-06: widget note v2 canonico (site-notes/widget) al posto del vecchio Feedback; contesto via SiteNotes.setContext; CSS vecchia rimossa.
+- 2026-11-06: widget note v2 canonico (site-notes/widget) al posto del vecchio Feedback; contesto via SiteNotes.setContext; CSS vecchia rimossa. widget note allineato alla versione finale (migrazione key#field, dedupe), ?v=3.
 - 2026-11-01: bollini premi (Wikidata) e contenuti (Kids-in-Mind/TMDB), filtri relativi, link Wikipedia.
 - 2026-11-01: stato visibile sulle copertine e modificabile dal sito (overrides.json via API GitHub).
 - 2026-11-01: import di Keep, Letterboxd e Prime Video (445 titoli), sito in inglese con titoli originali + inglese; arricchimento TMDB dei 145 titoli (copertine, trama, cast, trailer, streaming NL/IT), Feedback attivo; progetto avviato: import Instagram (145 titoli), script TMDB, sito con griglia, filtri e schede; repo pubblico e sito online su GitHub Pages.
