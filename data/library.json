@@ -23445,6 +23445,225 @@
   "major_awards": {}
  },
  {
+  "id": "movie-152601",
+  "tmdb_id": 152601,
+  "type": "movie",
+  "title": "Her",
+  "original_title": "Her",
+  "year": 2013,
+  "runtime": 126,
+  "seasons": null,
+  "episodes": null,
+  "genres": [
+   "Romance",
+   "Science Fiction",
+   "Drama"
+  ],
+  "directors": [
+   "Spike Jonze"
+  ],
+  "cast": [
+   "Joaquin Phoenix",
+   "Scarlett Johansson",
+   "Lynn Adrianna",
+   "Lisa Renee Pitts",
+   "Gabe Gomez",
+   "Chris Pratt",
+   "Artt Butler",
+   "May Lindstrom"
+  ],
+  "original_language": "en",
+  "countries": [
+   "US"
+  ],
+  "overview": "In the not so distant future, Theodore, a lonely writer, purchases a newly developed operating system designed to meet the user's every need. To Theodore's surprise, a romantic relationship develops between him and his operating system. This unconventional love story blends science fiction and romance in a sweet tale that explores the nature of love and the ways that technology isolates and connects us all.",
+  "poster": "https://image.tmdb.org/t/p/w342/eCOtqtfvn7mxGl6nfmq4b1exJRc.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/w780/1YnZchmaGc8dchgRPDpR1KGrixA.jpg",
+  "trailer": "https://www.youtube.com/watch?v=ne6p6MfLBxc",
+  "certification": {
+   "NL": "12",
+   "IT": "T"
+  },
+  "providers": {
+   "NL": {
+    "link": "https://www.themoviedb.org/movie/152601-her/watch?locale=NL",
+    "flatrate": [
+     {
+      "name": "Sooner",
+      "logo": "https://image.tmdb.org/t/p/w92/a9ZXOebUSXGUFxTi3N36sA8wSSh.png"
+     },
+     {
+      "name": "Film1",
+      "logo": "https://image.tmdb.org/t/p/w92/ulGGgH3Kq4waIZ1SKhyjRlsUrBI.png"
+     },
+     {
+      "name": "CineMember",
+      "logo": "https://image.tmdb.org/t/p/w92/gd0zMEph8WdBDaRd7LTqfCG53vI.png"
+     },
+     {
+      "name": "HBO Max",
+      "logo": "https://image.tmdb.org/t/p/w92/skypuy7SXuugIQeYg0IglmzoKaS.png"
+     },
+     {
+      "name": "HBO Max Amazon Channel",
+      "logo": "https://image.tmdb.org/t/p/w92/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+     }
+    ],
+    "rent": [
+     {
+      "name": "Pathé Thuis",
+      "logo": "https://image.tmdb.org/t/p/w92/oB7QrPnusUtIpKr8k0YQ12INLeP.png"
+     },
+     {
+      "name": "Apple TV Store",
+      "logo": "https://image.tmdb.org/t/p/w92/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+     },
+     {
+      "name": "Amazon Video",
+      "logo": "https://image.tmdb.org/t/p/w92/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+     }
+    ],
+    "buy": [
+     {
+      "name": "Pathé Thuis",
+      "logo": "https://image.tmdb.org/t/p/w92/oB7QrPnusUtIpKr8k0YQ12INLeP.png"
+     },
+     {
+      "name": "Apple TV Store",
+      "logo": "https://image.tmdb.org/t/p/w92/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+     },
+     {
+      "name": "Amazon Video",
+      "logo": "https://image.tmdb.org/t/p/w92/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+     }
+    ]
+   },
+   "IT": {
+    "link": "https://www.themoviedb.org/movie/152601-her/watch?locale=IT",
+    "flatrate": [
+     {
+      "name": "Sky Go",
+      "logo": "https://image.tmdb.org/t/p/w92/1Yvl9eP3pmktqChitnFhHJHcBtX.png"
+     },
+     {
+      "name": "Now TV",
+      "logo": "https://image.tmdb.org/t/p/w92/oFAnvlaEW2KT6J7XM0DXjlWqKu9.png"
+     },
+     {
+      "name": "Nexo Plus",
+      "logo": "https://image.tmdb.org/t/p/w92/98rWoQxf23eIZXB7fWaMQuY7FOZ.png"
+     },
+     {
+      "name": "MYmovies One",
+      "logo": "https://image.tmdb.org/t/p/w92/nRmJaFFz4CSw0HhFSkQkDNJSEut.png"
+     },
+     {
+      "name": "Anni Duemila Amazon Channel",
+      "logo": "https://image.tmdb.org/t/p/w92/jXmcBGkSWnTNKUQRtqlR3hNng0o.png"
+     }
+    ],
+    "rent": [
+     {
+      "name": "Apple TV Store",
+      "logo": "https://image.tmdb.org/t/p/w92/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+     },
+     {
+      "name": "Rakuten TV",
+      "logo": "https://image.tmdb.org/t/p/w92/872dfVu1biZISJ8rO143CZZutPR.png"
+     },
+     {
+      "name": "Amazon Video",
+      "logo": "https://image.tmdb.org/t/p/w92/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+     },
+     {
+      "name": "CHILI",
+      "logo": "https://image.tmdb.org/t/p/w92/xfDy4aGaOqbUqKPVQobjoJ9ZsSs.png"
+     }
+    ],
+    "buy": [
+     {
+      "name": "Apple TV Store",
+      "logo": "https://image.tmdb.org/t/p/w92/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+     },
+     {
+      "name": "Rakuten TV",
+      "logo": "https://image.tmdb.org/t/p/w92/872dfVu1biZISJ8rO143CZZutPR.png"
+     },
+     {
+      "name": "Amazon Video",
+      "logo": "https://image.tmdb.org/t/p/w92/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+     },
+     {
+      "name": "CHILI",
+      "logo": "https://image.tmdb.org/t/p/w92/xfDy4aGaOqbUqKPVQobjoJ9ZsSs.png"
+     }
+    ]
+   }
+  },
+  "keywords": [
+   "future",
+   "artificial intelligence (a.i.)",
+   "computer",
+   "satire",
+   "love",
+   "loneliness",
+   "transhumanism",
+   "los angeles, california",
+   "heartbreak",
+   "semi autobiographical",
+   "speculative",
+   "singularity"
+  ],
+  "content": {
+   "sex": 7,
+   "violence": 4,
+   "language": 8,
+   "url": "https://kids-in-mind.com/h/her.htm",
+   "source": "kim",
+   "sex_flag": true,
+   "violence_flag": false
+  },
+  "similar": [
+   "Love Me",
+   "Archive",
+   "Swan Song",
+   "Ex Machina",
+   "Cloud Atlas",
+   "The Man Who Fell to Earth"
+  ],
+  "collection": null,
+  "ratings": {
+   "tmdb": 7.8
+  },
+  "imdb_id": "tt1798709",
+  "wikidata_id": "Q788822",
+  "links": {
+   "tmdb": "https://www.themoviedb.org/movie/152601",
+   "imdb": "https://www.imdb.com/title/tt1798709/",
+   "letterboxd": "https://letterboxd.com/tmdb/152601/",
+   "wikipedia": "https://en.wikipedia.org/wiki/Her_(2013_film)"
+  },
+  "status": "to watch",
+  "instagram": [],
+  "query": {
+   "title": "Her",
+   "year": 2013
+  },
+  "awards": [
+   "Academy Award for Best Writing, Original Screenplay",
+   "Critics' Choice Movie Award for Best Original and Adapted Screenplay",
+   "Golden Globe Award for Best Screenplay",
+   "National Board of Review Award for Best Film",
+   "National Board of Review: Top Ten Films",
+   "Saturn Award for Best Fantasy Film",
+   "Writers Guild of America Award for Best Original Screenplay"
+  ],
+  "major_awards": {
+   "Oscar": 1,
+   "Golden Globe": 1
+  }
+ },
+ {
   "id": "movie-1138194",
   "tmdb_id": 1138194,
   "type": "movie",
@@ -41971,6 +42190,208 @@
    "year": 2014
   },
   "awards": [],
+  "major_awards": {}
+ },
+ {
+  "id": "movie-976893",
+  "tmdb_id": 976893,
+  "type": "movie",
+  "title": "Perfect Days",
+  "original_title": "PERFECT DAYS",
+  "year": 2023,
+  "runtime": 124,
+  "seasons": null,
+  "episodes": null,
+  "genres": [
+   "Drama"
+  ],
+  "directors": [
+   "Wim Wenders"
+  ],
+  "cast": [
+   "Koji Yakusho",
+   "Tokio Emoto",
+   "Arisa Nakano",
+   "Aoi Yamada",
+   "Yumi Aso",
+   "Sayuri Ishikawa",
+   "Tomokazu Miura",
+   "Min Tanaka"
+  ],
+  "original_language": "ja",
+  "countries": [
+   "DE",
+   "JP"
+  ],
+  "overview": "Hirayama is content with his life as a toilet cleaner in Tokyo. Outside of his structured routine, he cherishes music on cassette tapes, books, and taking photos of trees. Through unexpected encounters, he reflects on finding beauty in the world.",
+  "poster": "https://image.tmdb.org/t/p/w342/tvUHVSTJV9ITON3oyHaWp7oaAc8.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/w780/7WBIaphEm09Z8WFBo85kWGxYYkk.jpg",
+  "trailer": "https://www.youtube.com/watch?v=Iv8YO5BXCAQ",
+  "certification": {
+   "NL": "AL",
+   "IT": "T"
+  },
+  "providers": {
+   "NL": {
+    "link": "https://www.themoviedb.org/movie/976893-perfect-days/watch?locale=NL",
+    "flatrate": [
+     {
+      "name": "Videoland",
+      "logo": "https://image.tmdb.org/t/p/w92/3IdfSLRjSoDoo9lrpvX4oxZmnVi.png"
+     },
+     {
+      "name": "Sooner",
+      "logo": "https://image.tmdb.org/t/p/w92/a9ZXOebUSXGUFxTi3N36sA8wSSh.png"
+     },
+     {
+      "name": "Film1",
+      "logo": "https://image.tmdb.org/t/p/w92/ulGGgH3Kq4waIZ1SKhyjRlsUrBI.png"
+     },
+     {
+      "name": "CineMember",
+      "logo": "https://image.tmdb.org/t/p/w92/gd0zMEph8WdBDaRd7LTqfCG53vI.png"
+     },
+     {
+      "name": "HBO Max",
+      "logo": "https://image.tmdb.org/t/p/w92/skypuy7SXuugIQeYg0IglmzoKaS.png"
+     },
+     {
+      "name": "MUBI",
+      "logo": "https://image.tmdb.org/t/p/w92/k7iSlvgWzZuO4zU5PcBjhABMuia.png"
+     },
+     {
+      "name": "MUBI Amazon Channel",
+      "logo": "https://image.tmdb.org/t/p/w92/w1hl8HszsPf5aAGT0mVY0O6LYP4.png"
+     },
+     {
+      "name": "HBO Max Amazon Channel",
+      "logo": "https://image.tmdb.org/t/p/w92/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+     }
+    ],
+    "rent": [
+     {
+      "name": "Pathé Thuis",
+      "logo": "https://image.tmdb.org/t/p/w92/oB7QrPnusUtIpKr8k0YQ12INLeP.png"
+     },
+     {
+      "name": "Apple TV Store",
+      "logo": "https://image.tmdb.org/t/p/w92/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+     },
+     {
+      "name": "Amazon Video",
+      "logo": "https://image.tmdb.org/t/p/w92/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+     },
+     {
+      "name": "meJane",
+      "logo": "https://image.tmdb.org/t/p/w92/sLa7ctMpAoKdxIS72mHl7xuhONL.png"
+     }
+    ],
+    "buy": [
+     {
+      "name": "Pathé Thuis",
+      "logo": "https://image.tmdb.org/t/p/w92/oB7QrPnusUtIpKr8k0YQ12INLeP.png"
+     },
+     {
+      "name": "Apple TV Store",
+      "logo": "https://image.tmdb.org/t/p/w92/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+     },
+     {
+      "name": "Amazon Video",
+      "logo": "https://image.tmdb.org/t/p/w92/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+     },
+     {
+      "name": "meJane",
+      "logo": "https://image.tmdb.org/t/p/w92/sLa7ctMpAoKdxIS72mHl7xuhONL.png"
+     }
+    ]
+   },
+   "IT": {
+    "link": "https://www.themoviedb.org/movie/976893-perfect-days/watch?locale=IT",
+    "flatrate": [
+     {
+      "name": "Timvision",
+      "logo": "https://image.tmdb.org/t/p/w92/iGb7XGcCiCZyBgBqIdSEBiOxNc4.png"
+     }
+    ],
+    "rent": [
+     {
+      "name": "Apple TV Store",
+      "logo": "https://image.tmdb.org/t/p/w92/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+     },
+     {
+      "name": "Rakuten TV",
+      "logo": "https://image.tmdb.org/t/p/w92/872dfVu1biZISJ8rO143CZZutPR.png"
+     },
+     {
+      "name": "CHILI",
+      "logo": "https://image.tmdb.org/t/p/w92/xfDy4aGaOqbUqKPVQobjoJ9ZsSs.png"
+     }
+    ],
+    "buy": [
+     {
+      "name": "Apple TV Store",
+      "logo": "https://image.tmdb.org/t/p/w92/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+     },
+     {
+      "name": "Rakuten TV",
+      "logo": "https://image.tmdb.org/t/p/w92/872dfVu1biZISJ8rO143CZZutPR.png"
+     },
+     {
+      "name": "CHILI",
+      "logo": "https://image.tmdb.org/t/p/w92/xfDy4aGaOqbUqKPVQobjoJ9ZsSs.png"
+     }
+    ]
+   }
+  },
+  "keywords": [
+   "tree",
+   "routine",
+   "slice of life",
+   "janitor",
+   "working class",
+   "tokyo, japan",
+   "character study",
+   "uncle niece relationship",
+   "audio cassette",
+   "solitude",
+   "mystical quest",
+   "human nature"
+  ],
+  "content": {
+   "sex_flag": false,
+   "violence_flag": false,
+   "source": "tmdb"
+  },
+  "similar": [
+   "Only Yesterday",
+   "Child of Kamiari Month",
+   "Little Forest: Summer/Autumn",
+   "Little Forest: Winter/Spring",
+   "After the Storm",
+   "When Marnie Was There"
+  ],
+  "collection": null,
+  "ratings": {
+   "tmdb": 7.8
+  },
+  "imdb_id": "tt27503384",
+  "wikidata_id": "Q117663112",
+  "links": {
+   "tmdb": "https://www.themoviedb.org/movie/976893",
+   "imdb": "https://www.imdb.com/title/tt27503384/",
+   "letterboxd": "https://letterboxd.com/tmdb/976893/",
+   "wikipedia": "https://en.wikipedia.org/wiki/Perfect_Days"
+  },
+  "status": "to watch",
+  "instagram": [],
+  "query": {
+   "title": "Perfect Days",
+   "year": 2023
+  },
+  "awards": [
+   "Cannes Film Festival Award for Best Actor",
+   "Prize of the Ecumenical Jury Cannes"
+  ],
   "major_awards": {}
  },
  {

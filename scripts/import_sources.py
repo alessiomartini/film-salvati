@@ -214,6 +214,11 @@ def main():
         for fixed in m or []:
             add(titles, {**one, **fixed}, one["status"])
 
+    # Aggiunte a mano (da Google Tasks o chat): data/manual.json, {title, year, type, status}.
+    with open(os.path.join(ROOT, "data", "manual.json"), encoding="utf-8") as f:
+        for one in json.load(f):
+            add(titles, one, one["status"])
+
     with open(os.path.join(ROOT, "data", "my-list.json"), "w", encoding="utf-8") as f:
         json.dump(sorted(titles.values(), key=lambda t: t["title"]), f, ensure_ascii=False, indent=1)
     print(f"Instagram: {len(posts)} post, {n_ig} titoli, {skipped} non film, "
