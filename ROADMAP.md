@@ -107,6 +107,8 @@ Repo reso pubblico il 2026-11-01 (con l'account free GitHub Pages richiede un re
 Pages servito direttamente dal branch main, senza workflow: non c'è build.
 
 ## Log
+
+- 2026-11-07: aggiunte a mano Her (2013) e Perfect Days (2023) da Google Tasks; nuova sorgente `data/manual.json` letta da import_sources.py.
 - 2026-11-06: widget note v2 canonico (site-notes/widget) al posto del vecchio Feedback; contesto via SiteNotes.setContext; CSS vecchia rimossa. widget note allineato alla versione finale (migrazione key#field, dedupe), ?v=3.
 - 2026-11-01: bollini premi (Wikidata) e contenuti (Kids-in-Mind/TMDB), filtri relativi, link Wikipedia.
 - 2026-11-01: stato visibile sulle copertine e modificabile dal sito (overrides.json via API GitHub).
