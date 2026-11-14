@@ -44,6 +44,7 @@ Unico file per il futuro e il passato del progetto, letto da Projects Overview
 - [ ] Data di visione
 
 ## Personalizzazione
+- [ ] Filtro dello stato: poter combinare liberamente le tre opzioni (tutte le combinazioni possibili) (nota dal sito, 2026-11-13)
 - [x] Stato visibile su ogni copertina (Watched verde, Maybe watched arancione)
 - [x] Cambiare lo stato dal sito (pulsante Edit, solo con il token di Alessio)
 - [ ] I miei abbonamenti evidenziati e filtro "solo i miei servizi"
@@ -55,6 +56,7 @@ Unico file per il futuro e il passato del progetto, letto da Projects Overview
 - [ ] GitHub Action settimanale: riaggiorna disponibilità streaming e voti (chiavi come secrets)
 
 ## Idee
+- [ ] Per ogni serie/film rilevante, link a un'analisi tecnica (regia, recitazione, fotografia) e a un'analisi del contenuto; anche più analisi per favorire la diversità (nota dal sito, 2026-11-13)
 - [ ] Compositore della colonna sonora, con link a music-library
 - [ ] "Tratto da" (libro, storia vera, opera teatrale)
 - [ ] Location delle riprese
@@ -108,6 +110,7 @@ Pages servito direttamente dal branch main, senza workflow: non c'è build.
 
 ## Log
 
+- 2026-11-14: note dal sito portate nel ROADMAP
 - 2026-11-07: aggiunte a mano Her (2013) e Perfect Days (2023) da Google Tasks; nuova sorgente `data/manual.json` letta da import_sources.py.
 - 2026-11-06: widget note v2 canonico (site-notes/widget) al posto del vecchio Feedback; contesto via SiteNotes.setContext; CSS vecchia rimossa. widget note allineato alla versione finale (migrazione key#field, dedupe), ?v=3.
 - 2026-11-01: bollini premi (Wikidata) e contenuti (Kids-in-Mind/TMDB), filtri relativi, link Wikipedia.
